@@ -1,0 +1,962 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.19"]
+[Round "-"]
+[White "FirejFox"]
+[Black "Igor_Jovanovic"]
+[Result "1-0"]
+[WhiteElo "1833"]
+[BlackElo "1807"]
+[TimeControl "600"]
+[EndTime "10:46:49 GMT+0000"]
+[Termination "FirejFox wygrał przez poddanie partii"]
+
+1. d4 e6 2. c4 d6 3. Nc3 Nf6 4. e3 Be7 5. Nf3 O-O 6. Bd3 Nbd7 7. Qc2 g6 8. Bd2
+a6 9. O-O-O c6 10. h4 Ng4 11. Rdf1 f5 12. e4 b5 13. cxb5 axb5 14. exf5 exf5 15.
+h5 b4 16. Qb3+ d5 17. Ne2 Qa5 18. Kb1 Qa4 19. Qxa4 Rxa4 20. hxg6 hxg6 21. Nf4
+Kf7 22. Rh7+ Kf6 23. Nh4 Rf7 24. Rxf7+ Kxf7 25. Nhxg6 Bf6 26. f3 Nh6 27. b3 Ra8
+28. Bxb4 Bxd4 29. Rh1 Bg7 30. Re1 c5 31. Re7+ Kg8 32. Ne6 Bh8 33. Bxc5 Nxc5 34.
+Nxc5 Bd4 35. Ne6 Bxe6 36. Rxe6 Kf7 37. Nf4 Rg8 38. Rxh6 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.19"]
+[Round "-"]
+[White "Igor_Jovanovic"]
+[Black "FirejFox"]
+[Result "0-1"]
+[WhiteElo "1800"]
+[BlackElo "1840"]
+[TimeControl "600"]
+[EndTime "10:57:02 GMT+0000"]
+[Termination "FirejFox wygrał przez poddanie partii"]
+
+1. d4 d5 2. e3 Nf6 3. Nf3 e6 4. Be2 c5 5. dxc5 Bxc5 6. O-O O-O 7. Nbd2 a6 8. a3
+b5 9. b4 Bb6 10. Bb2 Bb7 11. c3 Nbd7 12. a4 bxa4 13. Rxa4 Qc7 14. Qa1 a5 15.
+bxa5 Rxa5 16. Rxa5 Bxa5 17. Nb3 Ra8 18. Nxa5 Rxa5 19. Qb1 Ne4 20. Rc1 Nb6 21.
+Qc2 Nc4 22. Nd4 Ba6 23. Nb3 Ra2 24. Rb1 Na3 25. Qc1 Bxe2 26. Bxa3 Qxc3 27. Qxc3
+Nxc3 28. Re1 Rxa3 29. Nd4 Bc4 30. Nc6 Ne4 31. f3 Nc5 32. Ne5 f6 33. Nxc4 dxc4
+34. Rc1 c3 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.19"]
+[Round "-"]
+[White "PUKOKABRA"]
+[Black "FirejFox"]
+[Result "0-1"]
+[WhiteElo "1885"]
+[BlackElo "1849"]
+[TimeControl "600"]
+[EndTime "18:59:09 GMT+0000"]
+[Termination "FirejFox wygrał przez poddanie partii"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5 5. O-O O-O 6. h3 d6 7. Re1 h6 8. c3 Be6
+9. Nbd2 a6 10. a4 Ba7 11. a5 b5 12. axb6 Bxb6 13. Rxa6 Bxc4 14. Rxa8 Qxa8 15.
+Nxc4 Bc5 16. b4 Ba7 17. Be3 Bxe3 18. Nxe3 Qa3 19. Qc2 Ra8 20. Nc4 Qa6 21. Qb2
+Ne7 22. Na5 Qxd3 23. Re3 Qb5 24. c4 Qb6 25. Nd2 Rxa5 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.19"]
+[Round "-"]
+[White "FirejFox"]
+[Black "naseri634"]
+[Result "0-1"]
+[WhiteElo "1841"]
+[BlackElo "1836"]
+[TimeControl "600"]
+[EndTime "19:10:34 GMT+0000"]
+[Termination "naseri634 wygrywa (mat)"]
+
+1. e4 c5 2. Nc3 Nc6 3. f4 d6 4. d3 e5 5. Nf3 Bg4 6. h3 Bxf3 7. Qxf3 Nd4 8. Qf2
+Nf6 9. fxe5 dxe5 10. Be3 Bd6 11. O-O-O O-O 12. g4 a6 13. g5 Nd7 14. h4 b5 15.
+Nd5 b4 16. h5 Qa5 17. Kb1 Nb6 18. Bh3 Na4 19. Bxd4 cxd4 20. b3 Nc3+ 21. Nxc3
+bxc3 22. Bd7 Qa3 23. Rdf1 Qb2# 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.19"]
+[Round "-"]
+[White "Scorpio638"]
+[Black "FirejFox"]
+[Result "0-1"]
+[WhiteElo "1851"]
+[BlackElo "1849"]
+[TimeControl "600"]
+[EndTime "19:13:36 GMT+0000"]
+[Termination "FirejFox wygrał przez poddanie partii"]
+
+1. e4 e5 2. Nf3 Nc6 3. b3 Nf6 4. d3 Bc5 5. Bb2 d6 6. Nc3 O-O 7. g3 Be6 8. Bg2
+Ng4 9. O-O f5 10. exf5 Rxf5 11. Ne4 Bb6 12. Nfg5 Rxg5 13. Nxg5 Qxg5 14. Bxc6
+bxc6 15. Kg2 Bd5+ 16. f3 Ne3+ 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.19"]
+[Round "-"]
+[White "FirejFox"]
+[Black "barsur"]
+[Result "1-0"]
+[WhiteElo "1858"]
+[BlackElo "1900"]
+[TimeControl "600"]
+[EndTime "19:23:03 GMT+0000"]
+[Termination "FirejFox wygrał przez poddanie partii"]
+
+1. d4 d5 2. c4 c6 3. e3 Nf6 4. Nc3 Bf5 5. Nf3 e6 6. Be2 Bd6 7. O-O Nbd7 8. c5
+Bb8 9. b4 Bg4 10. h3 Bh5 11. a4 Qc7 12. g3 Ne4 13. Nxe4 dxe4 14. Nd2 Bxe2 15.
+Qxe2 f5 16. b5 Nf6 17. Bb2 O-O 18. a5 Nd5 19. b6 Qf7 20. Nc4 g5 21. a6 bxa6 22.
+Rxa6 Qb7 23. Rfa1 f4 24. Na5 f3 25. Qc4 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.20"]
+[Round "-"]
+[White "ompu"]
+[Black "FirejFox"]
+[Result "0-1"]
+[WhiteElo "1833"]
+[BlackElo "1866"]
+[TimeControl "600"]
+[EndTime "10:17:16 GMT+0000"]
+[Termination "FirejFox wygrał - partia porzucona"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. Bxc6+ bxc6 5. d4 exd4 6. Qxd4 Bb7 7. O-O c5 8.
+Qa4+ Qd7 9. Qxd7+ Kxd7 10. Nc3 g6 11. Bf4 Bg7 12. Nd5 Re8 13. Rfe1 Nf6 14. Nxf6+
+Bxf6 15. Nd2 Bc6 16. c3 Rb8 17. Rab1 Rhe8 18. f3 Bg7 19. Nb3 Ba4 20. Na5 Bc2 21.
+Rbc1 Bd3 22. b3 Rb5 23. Nc4 Bxc4 24. bxc4 Rb2 25. a4 Reb8 26. e5 Ra2 27. exd6
+cxd6 28. Red1 Rb6 29. Ra1 Rc2 30. a5 Ra6 31. Rab1 Kc7 32. Rb5 Rxc3 33. Rdb1 Rxc4
+34. h4 Rxf4 35. Kf2 Rxh4 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.20"]
+[Round "-"]
+[White "FirejFox"]
+[Black "lissyller"]
+[Result "1-0"]
+[WhiteElo "1874"]
+[BlackElo "1866"]
+[TimeControl "600"]
+[EndTime "10:23:00 GMT+0000"]
+[Termination "FirejFox wygrał przez poddanie partii"]
+
+1. e4 c6 2. Nf3 d5 3. d3 dxe4 4. dxe4 Qxd1+ 5. Kxd1 Nf6 6. Nc3 e6 7. Bf4 Bc5 8.
+Ke1 b6 9. a3 O-O 10. Rd1 Ba6 11. b4 Bxf1 12. Kxf1 Be7 13. g3 Na6 14. Kg2 Rfd8
+15. Ne5 c5 16. b5 Nc7 17. Nc6 Rxd1 18. Rxd1 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.20"]
+[Round "-"]
+[White "FirejFox"]
+[Black "EggsBaconGritSausage"]
+[Result "1-0"]
+[WhiteElo "1882"]
+[BlackElo "1859"]
+[TimeControl "600"]
+[EndTime "10:30:46 GMT+0000"]
+[Termination "FirejFox wygrał przez poddanie partii"]
+
+1. e4 c5 2. Nf3 e6 3. Nc3 Nc6 4. d3 Nf6 5. Be3 d5 6. exd5 exd5 7. Qe2 Be7 8.
+Bxc5 O-O 9. Bxe7 Nxe7 10. O-O-O Re8 11. g3 Qa5 12. a3 Bg4 13. Bg2 Nf5 14. Qd2
+Nd4 15. Nxd4 Bxd1 16. Rxd1 Rac8 17. Nxd5 Qc5 18. Nxf6+ gxf6 19. Nb3 Qb6 20. Kb1
+a5 21. Nxa5 Re5 22. Nc4 Qxb2+ 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.20"]
+[Round "-"]
+[White "al-asyari"]
+[Black "FirejFox"]
+[Result "0-1"]
+[WhiteElo "1862"]
+[BlackElo "1890"]
+[TimeControl "600"]
+[EndTime "10:41:40 GMT+0000"]
+[Termination "FirejFox wygrywa (mat)"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5 5. c3 d6 6. Nbd2 Be6 7. Bxe6 fxe6 8. b4
+Bb6 9. a4 a6 10. a5 Ba7 11. Ba3 O-O 12. Qb3 d5 13. O-O Rf7 14. exd5 exd5 15. Ng5
+Rd7 16. c4 Nd4 17. Qa2 h6 18. Ngf3 Ne2+ 19. Kh1 e4 20. dxe4 dxe4 21. c5+ Kh8 22.
+Nxe4 Nxe4 23. Qxe2 Nc3 24. Qe5 Nb5 25. Bb2 Re7 26. Qh5 Kg8 27. Nh4 Qd2 28. Rab1
+Rae8 29. Nf5 Re1 30. Nxg7 Rxf1+ 31. Rxf1 Re1 32. Rg1 Rxg1+ 33. Kxg1 Qe1# 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.20"]
+[Round "-"]
+[White "FirejFox"]
+[Black "lufynic"]
+[Result "0-1"]
+[WhiteElo "1882"]
+[BlackElo "1917"]
+[TimeControl "600"]
+[EndTime "11:01:40 GMT+0000"]
+[Termination "lufynic wygrywa (mat)"]
+
+1. e4 e5 2. Nf3 Bc5 3. Bc4 Nf6 4. d3 O-O 5. O-O d6 6. Nc3 c6 7. Be3 Bb6 8. Bxb6
+axb6 9. a3 Be6 10. Qe2 d5 11. exd5 cxd5 12. Bb3 d4 13. Ne4 Bxb3 14. cxb3 Nc6 15.
+Nxf6+ Qxf6 16. Rfe1 Rae8 17. Rac1 Qd6 18. Qe4 f5 19. Qh4 Qd5 20. Ng5 h6 21. Nf3
+e4 22. dxe4 fxe4 23. Nd2 e3 24. fxe3 dxe3 25. Nc4 e2 26. Qg4 Qc5+ 27. Kh1 Qf2
+28. h3 Qf1+ 29. Kh2 Qf2 30. Nd6 Re5 31. Ne4 Qf4+ 32. Qxf4 Rxf4 33. Ng3 Nd4 34.
+Rc4 b5 35. Rxd4 Rxd4 36. Rxe2 Rxe2 37. Nxe2 Rd2 38. Nc3 Rxb2 39. Nxb5 Rxb3 40.
+Nd6 b6 41. Nc4 b5 42. Nd6 Kf8 43. Kg1 Ke7 44. Nf5+ Kf6 45. Nd4 Rb1+ 46. Kf2 Ke5
+47. Nf3+ Kf4 48. Nd4 Ke4 49. Ne6 g6 50. Nc5+ Kd5 51. Nd3 Rb3 52. Nf4+ Ke4 53.
+Nxg6 Rxa3 54. Ne7 b4 55. Nc6 b3 56. Nb4 b2 57. Nc2 b1=Q 58. Nxa3 Qb2+ 59. Kg1
+Qxa3 60. Kh2 Kf4 61. Kg1 Kg3 62. Kf1 Qa2 63. Ke1 Kxg2 64. Kd1 Kf3 65. h4 Ke3 66.
+h5 Qd2# 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.20"]
+[Round "-"]
+[White "pegiblue"]
+[Black "FirejFox"]
+[Result "1-0"]
+[WhiteElo "1874"]
+[BlackElo "1874"]
+[TimeControl "600"]
+[EndTime "11:11:49 GMT+0000"]
+[Termination "pegiblue wygrywa (mat)"]
+
+1. Nf3 d5 2. e4 dxe4 3. Ng5 Qd5 4. d3 exd3 5. Bxd3 Qxg2 6. Be4 Qg4 7. Qxg4 Bxg4
+8. Bxb7 f6 9. h3 Bf5 10. Nf3 Bxc2 11. Bxa8 e5 12. Bd5 Bb4+ 13. Nc3 Ne7 14. Bb3
+Nbc6 15. Bxc2 Nd4 16. Ba4+ Kf7 17. Nxd4 exd4 18. a3 dxc3 19. axb4 cxb2 20. Bxb2
+Nf5 21. Bb3+ Kg6 22. Bc2 Re8+ 23. Kf1 Kg5 24. Rg1+ Kf4 25. Rg4+ Kf3 26. Bxf5 g6
+27. Rg3+ Kf4 28. Bd7 Rd8 29. Rd1 f5 30. Rgd3 Rb8 31. b5 a5 32. Bc6 a4 33. Ba3 h5
+34. Rf3+ Ke5 35. Re1+ Kf6 36. Rfe3 f4 37. Be7+ Kf5 38. Re5# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.20"]
+[Round "-"]
+[White "FirejFox"]
+[Black "LevonErroneous"]
+[Result "1-0"]
+[WhiteElo "1882"]
+[BlackElo "1873"]
+[TimeControl "600"]
+[EndTime "11:17:20 GMT+0000"]
+[Termination "FirejFox wygrał przez poddanie partii"]
+
+1. e4 Nf6 2. Nc3 d5 3. exd5 Nxd5 4. Nxd5 Qxd5 5. Nf3 Nc6 6. d3 Bd7 7. Be2 O-O-O
+8. O-O e5 9. c4 Qe6 10. a3 Be7 11. b4 f5 12. b5 Nd4 13. Nxd4 exd4 14. Bf3 g5 15.
+Re1 Qg6 16. Rxe7 g4 17. Bd5 h5 18. Bf4 h4 19. a4 g3 20. fxg3 hxg3 21. Bxg3 Qf6
+22. Qe2 f4 23. Rf7 Qg5 24. Bxf4 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.20"]
+[Round "-"]
+[White "mbvg"]
+[Black "FirejFox"]
+[Result "1-0"]
+[WhiteElo "1974"]
+[BlackElo "1876"]
+[TimeControl "600"]
+[EndTime "13:10:39 GMT+0000"]
+[Termination "mbvg wygrał przez poddanie partii"]
+
+1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Nf6 5. O-O Bc5 6. e5 Ng8 7. Re1 Nge7 8.
+Ng5 O-O 9. Qh5 h6 10. Nxf7 Qe8 11. Nd6+ 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.20"]
+[Round "-"]
+[White "Evandsport21"]
+[Black "FirejFox"]
+[Result "1-0"]
+[WhiteElo "1927"]
+[BlackElo "1869"]
+[TimeControl "600"]
+[EndTime "13:17:04 GMT+0000"]
+[Termination "Evandsport21 wygrał przez poddanie partii"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O d6 6. Re1 Be6 7. e5 dxe5 8.
+Bxe6 fxe6 9. Nxe5 Nxe5 10. Rxe5 Qd6 11. Bf4 O-O-O 12. Nd2 h6 13. Bg3 Qc6 14. a4
+Bd6 15. Rxe6 Kb8 16. Bxd6 cxd6 17. Nb3 Qc4 18. Nxd4 Rhf8 19. c3 g5 20. Re2 h5
+21. Ne6 Rde8 22. Qxd6+ Ka8 23. Nc7+ Kb8 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.20"]
+[Round "-"]
+[White "FirejFox"]
+[Black "GreyCaesar"]
+[Result "1-0"]
+[WhiteElo "1876"]
+[BlackElo "1813"]
+[TimeControl "600"]
+[EndTime "13:31:14 GMT+0000"]
+[Termination "FirejFox wygrał przez poddanie partii"]
+
+1. d4 Nf6 2. c4 c5 3. dxc5 e5 4. b4 a5 5. Bd2 axb4 6. Bxb4 Nc6 7. Bc3 Bxc5 8.
+Nf3 d6 9. e3 O-O 10. Be2 Ne4 11. O-O Nxc3 12. Nxc3 Be6 13. Nd5 Ra6 14. Qb1 f5
+15. Qxb7 Qa8 16. Qxa8 Raxa8 17. Nc7 Bf7 18. Nxa8 Rxa8 19. Ng5 Be8 20. Rfb1 Nb4
+21. Rd1 Rxa2 22. Rxa2 Nxa2 23. Ne6 Nc3 24. Rd2 Nxe2+ 25. Rxe2 Kf7 26. Nxc5 dxc5
+27. Rd2 Ke7 28. Rd5 Ke6 29. Rxc5 Bf7 30. Ra5 Kd6 31. Ra7 Bxc4 32. Rxg7 h5 33.
+Rh7 f4 34. exf4 exf4 35. Rxh5 Ke6 36. Rc5 Bd3 37. Rg5 Kf6 38. Rg8 Kf7 39. Rg4 f3
+40. Rf4+ Kg6 41. Rxf3 Kg5 42. Rxd3 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.20"]
+[Round "-"]
+[White "FirejFox"]
+[Black "halilbah"]
+[Result "1-0"]
+[WhiteElo "1885"]
+[BlackElo "1901"]
+[TimeControl "600"]
+[EndTime "13:41:59 GMT+0000"]
+[Termination "FirejFox wygrał przez poddanie partii"]
+
+1. d4 e6 2. c4 d6 3. Nc3 b6 4. Nf3 Bb7 5. e3 Nd7 6. a3 Ne7 7. b4 a5 8. Bb2 g6 9.
+Bd3 Bg7 10. O-O h6 11. Qd2 O-O 12. Be4 Bxe4 13. Nxe4 g5 14. h3 Ng6 15. Ng3 e5
+16. dxe5 Ndxe5 17. Nxe5 Nxe5 18. Rac1 axb4 19. axb4 Qe7 20. Bxe5 Bxe5 21. Nf5
+Qf6 22. Qd3 Rfe8 23. Rb1 Qg6 24. Rfd1 Bg7 25. Qd5 Kh7 26. Ng3 Qe6 27. Qc6 Rec8
+28. Re1 f5 29. e4 f4 30. Nf5 Kg6 31. c5 bxc5 32. bxc5 Be5 33. Rb7 dxc5 34. Qxe6+
+1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.20"]
+[Round "-"]
+[White "halilbah"]
+[Black "FirejFox"]
+[Result "0-1"]
+[WhiteElo "1893"]
+[BlackElo "1893"]
+[TimeControl "600"]
+[EndTime "13:49:31 GMT+0000"]
+[Termination "FirejFox wygrał przez poddanie partii"]
+
+1. e4 e5 2. d4 d6 3. dxe5 dxe5 4. Qxd8+ Kxd8 5. Nf3 Nc6 6. Bb5 Bd6 7. Bxc6 bxc6
+8. h3 Ba6 9. b3 Nf6 10. Nfd2 Bb4 11. c3 Bd6 12. f3 Ke7 13. c4 h6 14. Ba3 Bxa3
+15. Nxa3 Rhd8 16. Rd1 Rd7 17. O-O Rad8 18. Nab1 Nh5 19. Kf2 Nf4 20. Rh1 Nd3+ 21.
+Ke2 Nf4+ 22. Kf2 Rd6 23. g3 Nd3+ 24. Ke3 Bc8 25. g4 Nb4 26. a3 Nc2+ 27. Ke2 Nd4+
+28. Ke3 Nxb3 29. c5 Nxc5 30. Nc3 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.20"]
+[Round "-"]
+[White "FirejFox"]
+[Black "halilbah"]
+[Result "1-0"]
+[WhiteElo "1901"]
+[BlackElo "1885"]
+[TimeControl "600"]
+[EndTime "14:08:09 GMT+0000"]
+[Termination "FirejFox wygrywa (mat)"]
+
+1. d4 e6 2. c4 d6 3. e3 g6 4. Nc3 Bg7 5. Nf3 Nd7 6. a3 h6 7. b4 a5 8. Bb2 axb4
+9. axb4 Rxa1 10. Qxa1 Ne7 11. Be2 O-O 12. O-O b6 13. Rd1 Bb7 14. Qa7 Qa8 15. Ra1
+Qxa7 16. Rxa7 Rb8 17. Nb5 Nc6 18. Ra4 Rc8 19. h3 Ncb8 20. Nd2 Na6 21. Nc3 e5 22.
+b5 exd4 23. bxa6 dxc3 24. axb7 Rb8 25. Bxc3 Bxc3 26. Ne4 Ba5 27. Bf3 f5 28. Ng3
+Nc5 29. Ra2 Nxb7 30. Ne2 Nc5 31. Nd4 Re8 32. Nb5 Re7 33. Re2 g5 34. Bd5+ Kg7 35.
+Nd4 Kg6 36. Nc6 Re8 37. Ra2 Nb3 38. Ra3 Nc5 39. Nd4 f4 40. exf4 gxf4 41. Nb5 Re7
+42. Rf3 Kg5 43. Nd4 Re1+ 44. Kh2 Re7 45. Nc6 Re2 46. Nd4 Re8 47. Nb5 Re7 48. Nd4
+Be1 49. g3 fxg3+ 50. fxg3 Re5 51. h4+ Kg6 52. Kh3 Ne4 53. g4 Nf2+ 54. Kg3 Ne4+
+55. Kh3 Nf6 56. h5+ Kg5 57. Ne6+ Rxe6 58. Rf5# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.21"]
+[Round "-"]
+[White "FirejFox"]
+[Black "Costa1818"]
+[Result "0-1"]
+[WhiteElo "1893"]
+[BlackElo "1929"]
+[TimeControl "600"]
+[EndTime "15:07:55 GMT+0000"]
+[Termination "Costa1818 wygrał przez poddanie partii"]
+
+1. d4 d5 2. c4 c6 3. e3 e6 4. Nc3 Nf6 5. Nf3 Bd6 6. Bd3 Nbd7 7. O-O dxc4 8. Bxc4
+b6 9. a3 Bb7 10. b4 O-O 11. Bb2 e5 12. dxe5 Nxe5 13. Nxe5 Bxe5 14. Qb3 Qc7 15.
+h3 c5 16. Ne2 Bxb2 17. Qxb2 cxb4 18. Qxb4 Rac8 19. Bd3 Qc6 20. f3 Nd5 21. Qf4
+Nxf4 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.21"]
+[Round "-"]
+[White "FirejFox"]
+[Black "eduard-dushanbaev"]
+[Result "1-0"]
+[WhiteElo "1899"]
+[BlackElo "1804"]
+[TimeControl "600"]
+[EndTime "15:20:03 GMT+0000"]
+[Termination "FirejFox wygrał przez poddanie partii"]
+
+1. d4 b6 2. c4 Bb7 3. Nc3 e6 4. e4 Bb4 5. Bd3 h6 6. Bd2 Nf6 7. f3 O-O 8. a3 Bxc3
+9. Bxc3 d6 10. Ne2 Nbd7 11. O-O c5 12. d5 e5 13. f4 a5 14. Qc2 Nh5 15. fxe5 dxe5
+16. Rf3 Ndf6 17. Bxe5 Ng4 18. Bc3 Qh4 19. h3 Ngf6 20. e5 Nxd5 21. cxd5 Bxd5 22.
+Rf2 c4 23. Bh7+ Kh8 24. Raf1 b5 25. Bg6 Ng3 26. Nxg3 Qxg3 27. Bxf7 Rxf7 28. Rxf7
+Bxf7 29. Rxf7 Qe3+ 30. Qf2 Qxf2+ 31. Kxf2 Kg8 32. e6 b4 33. Rxg7+ Kf8 34. e7+
+1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.21"]
+[Round "-"]
+[White "sheriff777"]
+[Black "FirejFox"]
+[Result "1-0"]
+[WhiteElo "1898"]
+[BlackElo "1891"]
+[TimeControl "600"]
+[EndTime "15:34:12 GMT+0000"]
+[Termination "sheriff777 wygrywa (mat)"]
+
+1. e4 e5 2. d4 exd4 3. Nf3 Nc6 4. c3 dxc3 5. Bc4 Bc5 6. Nxc3 d6 7. h3 Nf6 8. Bg5
+h6 9. Bxf6 Qxf6 10. Qc2 Be6 11. Nd5 Bxd5 12. Bxd5 O-O 13. Bxc6 bxc6 14. O-O Rab8
+15. b3 Rfe8 16. Rad1 Qg6 17. Rfe1 Rb4 18. Nd2 Re5 19. Nc4 Rg5 20. g4 h5 21. Ne3
+Bxe3 22. Rxe3 hxg4 23. h4 Rh5 24. Qxc6 Rxh4 25. Qd7 Qh6 26. Kf1 Qh5 27. Qc8+ Kh7
+28. Qf5+ g6 29. Qxf7+ Kh6 30. Qf8+ Kg5 31. Rd5# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.21"]
+[Round "-"]
+[White "adel8080"]
+[Black "FirejFox"]
+[Result "0-1"]
+[WhiteElo "1866"]
+[BlackElo "1899"]
+[TimeControl "600"]
+[EndTime "15:52:02 GMT+0000"]
+[Termination "FirejFox wygrał na czas"]
+
+1. g3 e5 2. Bg2 Nf6 3. c3 d5 4. e3 Nc6 5. d4 e4 6. Nd2 Bd6 7. Ne2 O-O 8. O-O Bg4
+9. f3 exf3 10. Nxf3 Ne4 11. Qb3 Be6 12. Qxb7 Na5 13. Qa6 Nc4 14. Nf4 Bxf4 15.
+exf4 Rb8 16. Ne5 Rb6 17. Qxa7 Nxb2 18. Bxb2 Rxb2 19. Nc6 Qd6 20. Bxe4 Qxc6 21.
+Qa3 Rfb8 22. Bf3 Qc4 23. Rf2 Rb1+ 24. Rxb1 Rxb1+ 25. Kg2 g6 26. Be2 Qc6 27. Bd3
+Rb6 28. Qe7 Kg7 29. f5 gxf5 30. Bxf5 Bxf5 31. Qe5+ f6 32. Qxf5 Qxc3 33. Qxd5 Qe3
+34. Qd7+ Kg6 35. Qxc7 Qe4+ 36. Kh3 Rb5 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.21"]
+[Round "-"]
+[White "genazagumennov"]
+[Black "FirejFox"]
+[Result "0-1"]
+[WhiteElo "1824"]
+[BlackElo "1905"]
+[TimeControl "600"]
+[EndTime "16:51:34 GMT+0000"]
+[Termination "FirejFox wygrał na czas"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. O-O Nf6 5. Re1 Bd7 6. d4 a6 7. Ba4 b5 8. Bb3
+Be7 9. c3 O-O 10. Bd5 Nxd5 11. exd5 Na5 12. dxe5 dxe5 13. Nxe5 Bd6 14. Nxd7 Qxd7
+15. Qf3 Rfe8 16. Be3 Nc4 17. b3 Nxe3 18. fxe3 Re5 19. c4 bxc4 20. bxc4 Rae8 21.
+Nc3 Rf5 22. Qh3 Re7 23. e4 Rf6 24. Qxd7 Rxd7 25. Rf1 Rh6 26. g3 Re7 27. Rac1 Re5
+28. Rf5 Re8 29. Rcf1 f6 30. Kg2 Rb8 31. Rb1 Re8 32. Rf3 Re5 33. Re1 Reh5 34. h4
+Rg6 35. Kh3 Re5 36. Na4 Re8 37. g4 Rh6 38. c5 Be5 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.21"]
+[Round "-"]
+[White "FirejFox"]
+[Black "Alpol7"]
+[Result "1-0"]
+[WhiteElo "1914"]
+[BlackElo "1924"]
+[TimeControl "600"]
+[EndTime "17:04:28 GMT+0000"]
+[Termination "FirejFox wygrał przez poddanie partii"]
+
+1. d4 e6 2. c4 c6 3. Nc3 d5 4. e3 Nf6 5. Nf3 Bb4 6. Bd2 Bxc3 7. Bxc3 Ne4 8. Qc2
+Nxc3 9. bxc3 h6 10. Be2 O-O 11. O-O Nd7 12. cxd5 exd5 13. c4 Nf6 14. Rab1 Bg4
+15. h3 Bxf3 16. Bxf3 b6 17. Rfc1 Rc8 18. Qa4 Qd7 19. Rb2 dxc4 20. Qxc4 c5 21.
+Rbc2 cxd4 22. Qxc8 Rxc8 23. Rxc8+ Kh7 24. exd4 Qxd4 25. Rd1 Qb2 26. Rdd8 Qa1+
+27. Kh2 Qe5+ 28. g3 Qb2 29. Rh8+ Kg6 30. Rc6 Qxf2+ 31. Bg2 Qxa2 32. h4 h5 33.
+Kh3 Qa4 34. Bf3 Kf5 35. Rhc8 Qa1 36. Rc4 Kg6 37. R8c7 b5 38. R4c5 b4 39. Rg5+
+Kh6 40. Rxf7 Qf1+ 41. Bg2 Qf2 42. Rfxg7 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.21"]
+[Round "-"]
+[White "Thu2so"]
+[Black "FirejFox"]
+[Result "0-1"]
+[WhiteElo "1876"]
+[BlackElo "1921"]
+[TimeControl "600"]
+[EndTime "17:13:35 GMT+0000"]
+[Termination "FirejFox wygrywa (mat)"]
+
+1. e4 e5 2. Nf3 Nc6 3. c3 Nf6 4. d3 d6 5. d4 exd4 6. cxd4 d5 7. e5 Ne4 8. Bd3
+Bb4+ 9. Nbd2 Nxd2 10. Bxd2 Bxd2+ 11. Qxd2 O-O 12. Qc2 h6 13. O-O-O Nb4 14. Bh7+
+Kh8 15. Qb1 Nxa2+ 16. Qxa2 Kxh7 17. h4 Bf5 18. Qb3 Qd7 19. Qxb7 Rfb8 20. Qa6 Rb6
+21. Qa3 Rab8 22. Rd2 Qc6+ 23. Kd1 Bc2+ 24. Rxc2 Qg6 25. Rg1 Rb3 26. Qxa7 Rxb2
+27. Rxb2 Rxb2 28. Qa5 Qb1# 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.21"]
+[Round "-"]
+[White "FirejFox"]
+[Black "PiterArenas"]
+[Result "0-1"]
+[WhiteElo "1912"]
+[BlackElo "1866"]
+[TimeControl "600"]
+[EndTime "17:34:00 GMT+0000"]
+[Termination "PiterArenas wygrywa (mat)"]
+
+1. d4 f5 2. c4 e6 3. Nc3 Bb4 4. Bd2 Nf6 5. a3 Bxc3 6. Bxc3 b6 7. e3 Bb7 8. Nf3
+Ne4 9. Qc2 O-O 10. Bd3 Qe8 11. O-O-O a6 12. Ne5 d6 13. Nf3 b5 14. Nd2 Nxf2 15.
+Rhf1 Nxd1 16. Kxd1 bxc4 17. Bxc4 Nd7 18. g3 Nb6 19. Bb3 Bd5 20. Ba5 Bxb3 21.
+Nxb3 Nd5 22. Ke2 Qh5+ 23. Kd3 c5 24. dxc5 dxc5 25. Qxc5 Qxh2 26. Qd6 Qh6 27. Rf3
+Qf6 28. Nd4 e5 29. Qxd5+ Kh8 30. Rxf5 Qg6 31. Qxe5 Rxf5 32. Nxf5 Re8 33. Qd4
+Qxf5+ 34. e4 Qxa5 35. Qd7 Rd8 36. Qxd8+ Qxd8+ 37. Ke3 Qc8 38. e5 Kg8 39. Kf4 Kf8
+40. Kg5 Qc1+ 41. Kf5 Qxb2 42. Ke6 Qxa3 43. Kd7 Qe7+ 44. Kc8 Qxe5 45. g4 Ke8 46.
+g5 Qc5+ 47. Kb7 Kd7 48. g6 Qb5+ 49. Ka7 Kc7 50. gxh7 Qb7# 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.22"]
+[Round "-"]
+[White "FirejFox"]
+[Black "dzinzidizzi"]
+[Result "0-1"]
+[WhiteElo "1905"]
+[BlackElo "1941"]
+[TimeControl "600"]
+[EndTime "10:53:52 GMT+0000"]
+[Termination "dzinzidizzi wygrał przez poddanie partii"]
+
+1. d4 Nf6 2. c3 e6 3. c4 d5 4. e3 dxc4 5. Bxc4 c6 6. Nc3 Nbd7 7. Nf3 b5 8. Bd3
+Bd6 9. O-O O-O 10. Qc2 e5 11. dxe5 Nxe5 12. Nxe5 Bxe5 13. f4 Bxc3 14. Qxc3 Qb6
+15. b3 Nd5 16. Qd2 Rd8 17. Qe2 Nc3 18. Qd2 b4 19. Bb2 Ba6 20. Rfd1 Rxd3 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.22"]
+[Round "-"]
+[White "markomicunovic"]
+[Black "FirejFox"]
+[Result "0-1"]
+[WhiteElo "1964"]
+[BlackElo "1915"]
+[TimeControl "600"]
+[EndTime "11:13:33 GMT+0000"]
+[Termination "FirejFox wygrywa (mat)"]
+
+1. e4 e5 2. f4 exf4 3. Nf3 h6 4. Bc4 d6 5. c3 g5 6. Qb3 Qd7 7. d4 Nc6 8. a4 Bg7
+9. a5 Nf6 10. O-O O-O 11. Bb5 a6 12. Ba4 Qg4 13. Bxc6 bxc6 14. Nbd2 Be6 15. Qc2
+Rab8 16. c4 Bd7 17. e5 Nh5 18. b3 Rfe8 19. Bb2 Bf5 20. Qc3 Re7 21. Rae1 Rbe8 22.
+Rf2 Bg6 23. Rfe2 Bh8 24. Ne4 Bxe4 25. Rxe4 Ng7 26. Qd3 Nf5 27. Ba3 Re6 28. exd6
+Rxe4 29. Rxe4 Rxe4 30. d7 Bf6 31. Qxe4 Ne3 32. Qe8+ Kg7 33. Bf8+ Kg6 34. Qe4+
+Kh5 35. Ne5 Qd1+ 36. Kf2 Qf1# 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.22"]
+[Round "-"]
+[White "FirejFox"]
+[Black "emmanuelikang"]
+[Result "0-1"]
+[WhiteElo "1908"]
+[BlackElo "1965"]
+[TimeControl "600"]
+[EndTime "11:31:36 GMT+0000"]
+[Termination "emmanuelikang wygrywa (mat)"]
+
+1. d4 d5 2. c4 c6 3. e3 e6 4. Nf3 Nf6 5. Nc3 Be7 6. Bd3 Nbd7 7. O-O a6 8. a3 b5
+9. cxd5 cxd5 10. b4 Nb6 11. Bb2 Bb7 12. Ne2 O-O 13. Rc1 Rc8 14. Rxc8 Qxc8 15.
+Qc1 Qd7 16. Qd2 Nc4 17. Bxc4 dxc4 18. Bc3 Bxf3 19. gxf3 Qd5 20. e4 Qh5 21. Qf4
+Rd8 22. Ng3 Qg6 23. Kh1 Bd6 24. e5 Nd5 25. Qd2 Be7 26. Ne4 Qf5 27. Qe2 Nxc3 28.
+Nxc3 Rxd4 29. Qe3 Qd3 30. Qxd3 Rxd3 31. Ne4 Rxa3 32. Rd1 h6 33. Nc5 Bh4 34. Kg2
+Ra2 35. Ne4 Rb2 36. Rd6 Rxb4 37. Rxa6 Ra4 38. Rb6 Rb4 39. Nd6 Rb2 40. Rb8+ Kh7
+41. Nxf7 c3 42. Rh8+ Kg6 43. Nd6 Bxf2 44. Ne4 Bd4+ 45. Kg3 Bxe5+ 46. Kg4 Rg2+
+47. Kh4 Rxh2+ 48. Kg4 c2 49. Rc8 Bb2 50. Rc6 c1=Q 51. Rxe6+ Kf7 52. Rd6 Qg1+ 53.
+Kf5 Rh5+ 54. Kf4 Be5# 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.22"]
+[Round "-"]
+[White "FirejFox"]
+[Black "bunchees"]
+[Result "1/2-1/2"]
+[WhiteElo "1908"]
+[BlackElo "1904"]
+[TimeControl "600"]
+[EndTime "11:51:23 GMT+0000"]
+[Termination "Remis (pat)"]
+
+1. d4 d5 2. c4 e5 3. e3 dxc4 4. Bxc4 exd4 5. exd4 Bb4+ 6. Nc3 Nf6 7. a3 Be7 8.
+Be3 O-O 9. Nf3 Bg4 10. h3 Bh5 11. g4 Bg6 12. Qe2 c6 13. O-O-O Nbd7 14. Ne5 Nxe5
+15. dxe5 Qc7 16. exf6 Bxf6 17. h4 b5 18. Ba2 Rfe8 19. h5 Be4 20. Nxe4 Rxe4 21.
+Qf3 Rae8 22. g5 Be5 23. g6 Kh8 24. gxh7 Bf6 25. h6 Qe5 26. hxg7+ Bxg7 27. Rd2 f5
+28. Rc2 f4 29. Bd2 Re2 30. Bc3 Rxc2+ 31. Kxc2 Qf5+ 32. Kc1 Qc5 33. Kb1 Bxc3 34.
+Qxc3+ Qxc3 35. bxc3 Re2 36. Rh2 a5 37. Bg8 c5 38. Rg2 b4 39. axb4 axb4 40. cxb4
+cxb4 41. Rh2 Rd2 42. Kc1 Re2 43. Bd5 Re5 44. Bb3 Re2 45. Kd1 Rb2 46. Be6 b3 47.
+Kc1 Rc2+ 48. Kb1 Rc3 49. Kb2 Rc2+ 50. Kxb3 Rc6 51. Bd5 Rd6 52. Be4 Rd4 53. Bc6
+Rd6 54. Be4 Rd4 55. f3 Rd7 56. Rg2 Rg7 57. Rxg7 Kxg7 58. Kc4 Kh8 59. Kd5 Kg7 60.
+Ke5 Kh8 61. Kxf4 Kg7 62. Kg5 Kh8 63. f4 Kg7 64. f5 Kh8 65. f6 1/2-1/2
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.22"]
+[Round "-"]
+[White "FirejFox"]
+[Black "ROYNguyenMinhKhoaHCM"]
+[Result "0-1"]
+[WhiteElo "1900"]
+[BlackElo "1902"]
+[TimeControl "600"]
+[EndTime "12:02:31 GMT+0000"]
+[Termination "ROYNguyenMinhKhoaHCM wygrał przez poddanie partii"]
+
+1. d4 d5 2. c4 e6 3. e3 Nf6 4. Nf3 c6 5. Nc3 Bd6 6. Bd3 O-O 7. c5 Bc7 8. b4 a6
+9. a4 Nbd7 10. Bb2 e5 11. dxe5 Nxe5 12. Nxe5 Bxe5 13. Qd2 d4 14. exd4 Qxd4 15.
+O-O Bf5 16. Nd1 Qxd3 17. Qxd3 Bxd3 18. Bxe5 Bxf1 19. Kxf1 Nd5 20. Rb1 Rfe8 21.
+Bd6 Re4 22. b5 Rxa4 23. bxc6 bxc6 24. Rb7 h6 25. f3 Ra1 26. Ke2 Re8+ 27. Kd2
+Ra2+ 28. Nb2 a5 29. Kd3 Nb4+ 30. Kc3 Re3+ 31. Kd2 Rb3 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.22"]
+[Round "-"]
+[White "milskyrekonan"]
+[Black "FirejFox"]
+[Result "1-0"]
+[WhiteElo "1988"]
+[BlackElo "1894"]
+[TimeControl "600"]
+[EndTime "16:11:59 GMT+0000"]
+[Termination "milskyrekonan wygrywa (mat)"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 d6 5. Ng5 d5 6. exd5 Nxd5 7. Qf3 Nxd4 8.
+Qxf7# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.22"]
+[Round "-"]
+[White "Blindmomo2"]
+[Black "FirejFox"]
+[Result "1-0"]
+[WhiteElo "2001"]
+[BlackElo "1888"]
+[TimeControl "600"]
+[EndTime "16:19:48 GMT+0000"]
+[Termination "Blindmomo2 wygrywa (mat)"]
+
+1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Nb3 Bb6 6. Nc3 d6 7. Qe2 Nf6 8. f3
+O-O 9. Be3 Re8 10. O-O-O Be6 11. g4 Ne5 12. g5 Nfd7 13. h4 Bxe3+ 14. Qxe3 a5 15.
+a3 a4 16. Nd4 c5 17. Ndb5 Nc4 18. Bxc4 Bxc4 19. Nxd6 Ne5 20. Nxe8 Qxe8 21. f4
+Ng6 22. h5 Ne7 23. f5 g6 24. f6 Nc6 25. hxg6 fxg6 26. Qxc5 Ne5 27. Qc7 b5 28.
+Qg7# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.22"]
+[Round "-"]
+[White "Jasbir15000"]
+[Black "FirejFox"]
+[Result "1-0"]
+[WhiteElo "1892"]
+[BlackElo "1880"]
+[TimeControl "600"]
+[EndTime "16:30:11 GMT+0000"]
+[Termination "Jasbir15000 wygrywa (mat)"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5 5. Nc3 d6 6. h3 O-O 7. a4 a5 8. O-O Be6
+9. Ba2 Nb4 10. Bg5 h6 11. Bh4 g5 12. Bg3 Nh5 13. Kh2 Nf4 14. Bxf4 exf4 15. Bxe6
+fxe6 16. d4 Bb6 17. Rc1 Qd7 18. e5 d5 19. Ne2 Qxa4 20. b3 Qd7 21. c3 Nc6 22. Qd3
+Kg7 23. g3 fxg3+ 24. Nxg3 Qf7 25. Ng1 Ne7 26. Rc2 Ng6 27. Nh5+ Kh8 28. Nf6 c6
+29. Ne2 Bd8 30. f4 gxf4 31. Nxf4 Nxf4 32. Rxf4 Bxf6 33. Rxf6 Qg7 34. Rg2 Rxf6
+35. Rxg7 Rf2+ 36. Kg3 Raf8 37. Qh7# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.22"]
+[Round "-"]
+[White "FirejFox"]
+[Black "Zoroh"]
+[Result "0-1"]
+[WhiteElo "1871"]
+[BlackElo "1862"]
+[TimeControl "600"]
+[EndTime "16:44:37 GMT+0000"]
+[Termination "Zoroh wygrywa (mat)"]
+
+1. d4 d5 2. c4 dxc4 3. e3 b5 4. a4 Qd7 5. axb5 Qxb5 6. Nc3 Qc6 7. Nf3 Bg4 8. Be2
+e6 9. h3 Bh5 10. g4 Bg6 11. Rg1 f6 12. g5 Bb4 13. Ra4 a5 14. gxf6 gxf6 15. Bd2
+Bd3 16. e4 Bxc3 17. Bxc3 Qxe4 18. Nd2 Qf5 19. Rxa5 Rxa5 20. Bxa5 Qxa5 21. Bh5+
+Kd7 22. Rg7+ Ne7 23. Bg4 Nc6 24. f3 h5 25. Kf2 hxg4 26. fxg4 Nxd4 27. Nf3 Nxf3
+28. Qxf3 Qd2+ 29. Kg3 f5 30. gxf5 Bxf5 31. h4 Qd3 32. Kf4 Rxh4+ 33. Ke5 Qxf3 34.
+b4 Qc3# 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.22"]
+[Round "-"]
+[White "xhesa"]
+[Black "FirejFox"]
+[Result "1-0"]
+[WhiteElo "1865"]
+[BlackElo "1863"]
+[TimeControl "600"]
+[EndTime "16:56:07 GMT+0000"]
+[Termination "xhesa wygrywa (mat)"]
+
+1. e4 e5 2. Bc4 Nf6 3. Nc3 Bc5 4. h3 Nc6 5. a3 d6 6. d3 O-O 7. Nf3 Be6 8. Nd5
+Nd4 9. c3 Nxf3+ 10. Qxf3 Nxd5 11. exd5 Bd7 12. Bb3 f5 13. Bc2 a6 14. O-O Rf7 15.
+Be3 Bxe3 16. fxe3 Qe7 17. e4 Raf8 18. Qh5 g6 19. Qe2 f4 20. Rf3 g5 21. Raf1 h5
+22. d4 g4 23. R3f2 Qg5 24. hxg4 Bxg4 25. Qd2 Qg7 26. Bd1 Qh7 27. Bxg4 hxg4 28.
+g3 f3 29. Rh2 Qxe4 30. Qg5+ Rg7 31. Qh6 Kf7 32. Qe6# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.23"]
+[Round "-"]
+[White "FirejFox"]
+[Black "Zdravkocurug"]
+[Result "1-0"]
+[WhiteElo "1871"]
+[BlackElo "1871"]
+[TimeControl "600"]
+[EndTime "15:55:44 GMT+0000"]
+[Termination "FirejFox wygrał przez poddanie partii"]
+
+1. d4 d5 2. c4 e5 3. e3 exd4 4. exd4 dxc4 5. Bxc4 Nc6 6. Nf3 Bg4 7. Be3 Nf6 8.
+Qb3 Na5 9. Qa4+ c6 10. Nc3 Nxc4 11. Qxc4 Bd6 12. Ne5 Be6 13. Qe2 O-O 14. O-O Nd7
+15. Rad1 Nxe5 16. dxe5 Qh4 17. exd6 f5 18. Rd4 Qf6 19. Rf4 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.23"]
+[Round "-"]
+[White "FirejFox"]
+[Black "denis679"]
+[Result "1-0"]
+[WhiteElo "1880"]
+[BlackElo "1900"]
+[TimeControl "600"]
+[EndTime "16:06:34 GMT+0000"]
+[Termination "FirejFox wygrał przez poddanie partii"]
+
+1. d4 d5 2. c4 dxc4 3. e3 Nf6 4. Bxc4 e6 5. Nc3 Be7 6. Nf3 O-O 7. O-O b6 8. a3
+Bb7 9. b4 Nbd7 10. Bb2 a5 11. b5 Rc8 12. Bd3 c5 13. bxc6 Bxc6 14. Qe2 Qc7 15.
+Rfc1 Qb7 16. Bb5 Nb8 17. Bxc6 Nxc6 18. Nb5 a4 19. Rc2 Na5 20. Rac1 Rxc2 21. Rxc2
+Ne4 22. Rc7 Qd5 23. Rxe7 Qb3 24. Ne5 f6 25. Ng4 Nc4 26. Rxe6 Qxb5 27. Rxe4 f5
+28. Re5 Qxb2 29. Qxc4+ Kh8 30. Rb5 Qa1+ 31. Qf1 fxg4 32. Qxa1 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.23"]
+[Round "-"]
+[White "apatikus14"]
+[Black "FirejFox"]
+[Result "0-1"]
+[WhiteElo "1864"]
+[BlackElo "1888"]
+[TimeControl "600"]
+[EndTime "16:10:59 GMT+0000"]
+[Termination "FirejFox wygrał przez poddanie partii"]
+
+1. e4 e5 2. Bc4 Nf6 3. d4 exd4 4. Nf3 Bc5 5. O-O O-O 6. e5 Ng4 7. Nxd4 Nxe5 8.
+Nc3 Nxc4 9. Qh5 Bxd4 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.23"]
+[Round "-"]
+[White "FirejFox"]
+[Black "apatikus14"]
+[Result "1-0"]
+[WhiteElo "1895"]
+[BlackElo "1857"]
+[TimeControl "600"]
+[EndTime "16:18:50 GMT+0000"]
+[Termination "FirejFox wygrał przez poddanie partii"]
+
+1. d4 Nf6 2. c4 c5 3. e3 e6 4. Nc3 a6 5. Nf3 d5 6. cxd5 exd5 7. dxc5 Bxc5 8. Be2
+O-O 9. O-O Be6 10. a3 Nc6 11. b4 Ba7 12. Bb2 Rc8 13. Rc1 Bb8 14. Qd2 Qe7 15. Rc2
+Rfd8 16. Rfc1 Ne4 17. Qe1 Ne5 18. Nxe4 Nxf3+ 19. Bxf3 dxe4 20. Bxe4 Qh4 21. f4
+Ba7 22. Rxc8 Bxc8 23. Qxh4 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.23"]
+[Round "-"]
+[White "FirejFox"]
+[Black "Ivan2021_3"]
+[Result "0-1"]
+[WhiteElo "1889"]
+[BlackElo "1979"]
+[TimeControl "600"]
+[EndTime "16:34:04 GMT+0000"]
+[Termination "Ivan2021_3 wygrywa (mat)"]
+
+1. d4 d5 2. c4 c6 3. e3 Bf5 4. Nc3 Nf6 5. Nf3 e6 6. Be2 Be7 7. O-O O-O 8. a3
+Nbd7 9. b4 dxc4 10. Bxc4 Nb6 11. Bb3 a5 12. bxa5 Rxa5 13. Ne5 Nfd5 14. Nxd5 exd5
+15. Qd2 Qa8 16. Qb2 f6 17. Nf3 Na4 18. Bxa4 Rxa4 19. Nd2 Qa6 20. Nb3 Rc4 21. Nc5
+Bxc5 22. dxc5 Rxc5 23. Qb4 Rc2 24. Qf4 Bg6 25. Rd1 Qe2 26. Rf1 Bd3 27. Bb2 Rxb2
+28. Rfe1 Qc2 29. Qd4 Qxf2+ 30. Kh1 Qxg2# 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.23"]
+[Round "-"]
+[White "FirejFox"]
+[Black "DCure33"]
+[Result "0-1"]
+[WhiteElo "1880"]
+[BlackElo "1873"]
+[TimeControl "600"]
+[EndTime "16:46:13 GMT+0000"]
+[Termination "DCure33 wygrał przez poddanie partii"]
+
+1. d4 d5 2. c4 Nf6 3. e3 c5 4. dxc5 Nc6 5. a3 e5 6. b4 a6 7. cxd5 Nxd5 8. Bb2
+Be7 9. Nf3 O-O 10. Nxe5 Nxe5 11. Bxe5 Be6 12. Be2 Bf6 13. Bxf6 Qxf6 14. Nd2 Nc3
+15. Qc1 Nxe2 16. Kxe2 Rfe8 17. Rd1 Bg4+ 18. Nf3 Be6 19. Rb1 Bg4 20. Qb2 Qh4 21.
+Rh1 Rad8 22. h3 Bxf3+ 23. gxf3 Qc4+ 24. Ke1 Rd3 25. Rh2 Red8 26. Rg2 g6 27. Rg4
+Qd5 28. Rd4 Qxf3 29. Rxd8+ Rxd8 30. h4 Qh1+ 31. Ke2 Qxh4 32. Qf6 Qxf6 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.24"]
+[Round "-"]
+[White "tal_ayob"]
+[Black "FirejFox"]
+[Result "1-0"]
+[WhiteElo "1988"]
+[BlackElo "1874"]
+[TimeControl "600"]
+[EndTime "9:51:24 GMT+0000"]
+[Termination "tal_ayob wygrał przez poddanie partii"]
+
+1. e4 e5 2. d4 exd4 3. c3 dxc3 4. Bc4 cxb2 5. Bxb2 Nc6 6. Nf3 d6 7. O-O Be6 8.
+Bxe6 fxe6 9. Qb3 Rb8 10. Qxe6+ Qe7 11. Qd5 Nf6 12. Bxf6 gxf6 13. Nbd2 Qe5 14.
+Nxe5 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.24"]
+[Round "-"]
+[White "Kasparow2024"]
+[Black "FirejFox"]
+[Result "1-0"]
+[WhiteElo "2213"]
+[BlackElo "1872"]
+[TimeControl "600"]
+[EndTime "9:55:05 GMT+0000"]
+[Termination "Kasparow2024 wygrał przez poddanie partii"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 a6 5. Bxc6+ bxc6 6. dxe5 dxe5 7. Qxd8+ Kxd8
+8. Nxe5 Be6 9. Nxc6+ Kc8 10. Bf4 Nf6 11. f3 Bc5 12. c3 Kb7 13. Nd4 Rhd8 14. Be3
+Bb6 15. Nxe6 fxe6 16. Ke2 Rd7 17. Na3 Rad8 18. Nc4 Bxe3 19. Kxe3 Rd3+ 20. Ke2
+Nh5 21. g3 Nf6 22. Rhd1 Rxd1 23. Rxd1 Rxd1 24. Kxd1 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.24"]
+[Round "-"]
+[White "FirejFox"]
+[Black "Gabor1937"]
+[Result "0-1"]
+[WhiteElo "1865"]
+[BlackElo "1967"]
+[TimeControl "600"]
+[EndTime "10:15:45 GMT+0000"]
+[Termination "Gabor1937 wygrał na czas"]
+
+1. d4 Nf6 2. c4 e6 3. e3 d5 4. Nc3 c5 5. Nf3 Nc6 6. dxc5 Bxc5 7. cxd5 exd5 8.
+Be2 O-O 9. O-O Bg4 10. h3 Bh5 11. a3 a5 12. Na4 Ba7 13. Bd2 Ne4 14. Nc3 Nxd2 15.
+Qxd2 Bb8 16. Nb5 h6 17. Rfc1 Qd7 18. Rc5 Rd8 19. Rd1 Ne7 20. Rdc1 Ra6 21. Nfd4
+Bxe2 22. Qxe2 Rg6 23. Kf1 Bh2 24. Nf3 Bb8 25. Nfd4 Bh2 26. Nf3 Bb8 27. Nbd4 f6
+28. Rxa5 Nc6 29. Nxc6 bxc6 30. Rac5 Rc8 31. Qd3 Qe8 32. Qa6 f5 33. Qd3 Rd6 34.
+Qxf5 Ba7 35. R5c3 c5 36. Qf4 Qb5+ 37. Kg1 Rf6 38. Qe5 Qd7 39. Rd1 Rf5 40. Qg3
+Rcf8 41. Qg6 R8f6 42. Qg3 Qe8 43. Rcd3 Rxf3 44. Qxf3 Rxf3 45. gxf3 Qg6+ 46. Kf1
+Qh5 47. Rxd5 Qxf3 48. Rd8+ Kh7 49. R8d7 Bb8 50. Rd8 Be5 51. R8d5 Bxb2 52. a4 c4
+53. a5 c3 54. a6 c2 55. Re1 c1=Q 56. Rxc1 Bxc1 57. Rd8 Qh1+ 58. Ke2 Qxh3 59. a7
+Qg4+ 60. Ke1 Qb4+ 61. Kf1 Qb5+ 62. Kg2 Qa6 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.24"]
+[Round "-"]
+[White "Christianraja"]
+[Black "FirejFox"]
+[Result "1-0"]
+[WhiteElo "1931"]
+[BlackElo "1858"]
+[TimeControl "600"]
+[EndTime "10:22:45 GMT+0000"]
+[Termination "Christianraja wygrywa (mat)"]
+
+1. c4 e5 2. Nc3 Nf6 3. Nf3 Nc6 4. e4 d6 5. h3 Bd7 6. a3 Be7 7. d3 O-O 8. Be3 h6
+9. Nd5 Nxd5 10. cxd5 Nb8 11. Be2 f5 12. O-O f4 13. Bd2 g5 14. Bc3 Na6 15. b4 Rf7
+16. d4 Bf6 17. dxe5 Bxe5 18. Nxe5 dxe5 19. Bxe5 Qe7 20. Bxa6 Qxe5 21. Bd3 c6 22.
+dxc6 Bxc6 23. Re1 Rd7 24. Qc2 Rad8 25. Rad1 a6 26. Bc4+ Kg7 27. Rxd7+ Rxd7 28.
+f3 Rd4 29. Bb3 Bb5 30. Qc8 Bc6 31. Qg8+ Kf6 32. Qf7# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.24"]
+[Round "-"]
+[White "khalilkhairandish123"]
+[Black "FirejFox"]
+[Result "1-0"]
+[WhiteElo "1892"]
+[BlackElo "1851"]
+[TimeControl "600"]
+[EndTime "10:29:11 GMT+0000"]
+[Termination "khalilkhairandish123 wygrywa (mat)"]
+
+1. e4 e5 2. f4 exf4 3. Nf3 h6 4. Bc4 d6 5. O-O Bg4 6. d4 g5 7. c3 Bg7 8. Qb3 Qc8
+9. Bxf7+ Kf8 10. Bg6 Be6 11. d5 Bg4 12. Nd4 Nf6 13. h3 Bd7 14. Ne6+ Bxe6 15.
+dxe6 Ke7 16. Bf5 Nc6 17. Nd2 Ne5 18. Nc4 Nxc4 19. Qxc4 Nh5 20. Rd1 Ng3 21. b3 c6
+22. Ba3 Be5 23. Bxd6+ Bxd6 24. Rxd6 Kxd6 25. Rd1+ Ke7 26. Rd7+ Kf6 27. Rf7+ Ke5
+28. Qd4# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.24"]
+[Round "-"]
+[White "FirejFox"]
+[Black "sutardiiro7"]
+[Result "1-0"]
+[WhiteElo "1858"]
+[BlackElo "1817"]
+[TimeControl "600"]
+[EndTime "10:38:08 GMT+0000"]
+[Termination "FirejFox wygrywa (mat)"]
+
+1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5 4. Nf3 Bf5 5. d3 e6 6. Bd2 c6 7. Qe2 Nd7 8. Ne4
+Qc7 9. Bc3 Ngf6 10. O-O-O Bg6 11. h3 Nxe4 12. dxe4 Rd8 13. g4 Qf4+ 14. Kb1 Qxe4
+15. Qxe4 Bxe4 16. Bg2 Bxf3 17. Bxf3 Nb6 18. Rxd8+ Kxd8 19. Rd1+ Ke7 20. g5 Nd5
+21. Bd4 b6 22. c4 Nf4 23. h4 Ng6 24. h5 c5 25. Bc3 Nh4 26. Bc6 f6 27. Rd7+ Ke8
+28. gxf6 Nf5 29. f7# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.08.25"]
+[Round "-"]
+[White "ravipatra1959"]
+[Black "FirejFox"]
+[Result "1-0"]
+[WhiteElo "1868"]
+[BlackElo "1850"]
+[TimeControl "600"]
+[EndTime "14:29:30 GMT+0000"]
+[Termination "ravipatra1959 wygrał przez poddanie partii"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Ke6
+8. Nc3 Nd4 9. Bxd5+ Kd6 10. Qd3 c6 11. Bf3 Bf5 12. Ne4+ Ke6 13. O-O Qb6 14. c3
+Nxf3+ 15. Qxf3 g6 16. d4 Bg7 17. Ng5+ Kd7 18. dxe5 Bxe5 19. Nf7 Rhe8 20. Nxe5+
+Rxe5 21. Bf4 Re4 22. Rad1+ Ke7 23. g4 Rxf4 24. Qxf4 1-0
