@@ -27,6 +27,17 @@ pgn_data = PGNData(games2, "output2")
 result = pgn_data.export()
 result.print_summary()
 
+#%%
+dirname2 = "chess_games\\wojtek"
+games2 = os.listdir(dirname2)
+
+for i in range(0, len(games2)):
+    games2[i] = dirname2 + "\\" + games2[i]
+
+#%%
+pgn_data = PGNData(games2, "output3")
+result = pgn_data.export()
+result.print_summary()
 
 # Zapisuję w output2 a nie w output, ponieważ github nie zbiera plików powyżej 100
 # 100 MB. Proponuję, żeby później wrzucić te ramki do SQL pewnie, że by szybciej się otwierały.
