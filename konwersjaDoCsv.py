@@ -28,14 +28,14 @@ result = pgn_data.export()
 result.print_summary()
 
 #%%
-dirname2 = "chess_games\\wojtek"
-games2 = os.listdir(dirname2)
+dirname3 = "chess_games\\wojtek"
+games3 = os.listdir(dirname3)
 
-for i in range(0, len(games2)):
-    games2[i] = dirname2 + "\\" + games2[i]
+for i in range(0, len(games3)):
+    games3[i] = dirname3 + "\\" + games3[i]
 
 #%%
-pgn_data = PGNData(games2, "output3")
+pgn_data = PGNData(games3, "output3")
 result = pgn_data.export()
 result.print_summary()
 
@@ -46,3 +46,19 @@ result.print_summary()
 # np. uct time. Ale i tak output_moves2 jest zbyt duży.
 #I jestem za sqlite3 do przechowywania ramek danych. Powinno być łatwiej.
 ## %
+
+# %%
+# Full, lepiej pewnie jakoś złączyć pojedyńcze csv ale nie
+# znalazłem równie prostego sposobu jak po prostu jeszcze raz wywołanie
+# tej funkcji ale na wszystkim
+dirname4 = "chess_games\\full"
+games4 = os.listdir(dirname4)
+
+for i in range(0, len(games4)):
+    games4[i] = dirname4 + "\\" + games4[i]
+
+#%%
+pgn_data = PGNData(games4, "full")
+result = pgn_data.export()
+result.print_summary()
+# %%
