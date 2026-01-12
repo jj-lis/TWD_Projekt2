@@ -3,7 +3,6 @@ library(ggplot2)
 library(tidyr)
 library(lubridate)
 
-
 ### Wczytanie danych z danej ramki
 
 df_ruchy <- read.csv("TWD_Projekt2\\output_moves.csv")
