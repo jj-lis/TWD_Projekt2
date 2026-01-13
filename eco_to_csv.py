@@ -4,9 +4,10 @@ import pandas as pd
 
 # %%
 # Dane: https://github.com/lichess-org/chess-openings
-pliki=np.array(["a","b","c","d","e"])
-pliki="openings\\"+pliki+".tsv"
-
+#pliki=np.array(["a","b","c","d","e"])
+#pliki="openings\\"+pliki+".tsv"
+litery=["a","b","c","d","e"]
+pliki = [f"openings\\{l}.tsv" for l in litery]
 df2 = pd.concat(
     [pd.read_csv(p, sep="\t") for p in pliki],
     ignore_index=True
