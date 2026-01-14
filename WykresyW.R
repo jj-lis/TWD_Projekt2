@@ -24,4 +24,6 @@ df <- data.frame(
   Janek = c(max_j,min_j,wynik_j),
   Bartek = c(max_b,min_b,wynik_b)
 )
-rownames(df) <- c("najdłuzsza gra", "najkrótsza gra", "najwięcej gier jednego dnia")
+rownames(df) <- c("najdłuższa gra", "najkrótsza gra", "najwięcej gier jednego dnia")
+View(df)
+write.csv(df,"podsumowanie.csv")
