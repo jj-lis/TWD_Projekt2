@@ -7,5 +7,5 @@ Do każdej z zakładek możemy wydzielić dany okres bądź zawodników
 
 <img width="171" height="143" alt="twd2" src="https://github.com/user-attachments/assets/7c18b753-de52-4b11-95ef-4e86f3f3d19b" />
 
-#Analiza wyników:
+# Analiza wyników:
 Pierwsza część pokazuje podstawowe dane o ilość rozegranych partii
