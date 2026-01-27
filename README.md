@@ -16,3 +16,12 @@ Pierwsza część pokazuje podstawowe dane o ilość rozegranych partii na okre�
 Kolejna część ukazuje dane związane z średnią ilością materiału (sumą wartości figur jakie są na planszy) w trakcie trwania partii czy średnia częstość odwiedzania danych pól oraz zliczone ilości parti ze względu na ilość ruchów po której partia sie zakończyła
 
 <img width="452" height="316" alt="twd4" src="https://github.com/user-attachments/assets/81bd46b7-34ea-43a0-bb06-bc3d792562de" /> <img width="454" height="314" alt="twd5" src="https://github.com/user-attachments/assets/dfa9039e-1458-4f30-afdd-6cb9c04dc7b7" /> <img width="454" height="318" alt="twd6" src="https://github.com/user-attachments/assets/5cff40f9-e845-46e3-b570-912df65476e6" />
+
+## Debiuty 
+Ostatnia część posiada wykres top 5 ulubionych otwarć białymi i czarnymi
+
+<img width="755" height="319" alt="twd7" src="https://github.com/user-attachments/assets/4f29d02d-df35-415b-a083-4d031fea45d6" />
+
+A pod można spośród top 5 otwarć przejrzeć animację wybranego wariantu
+
+<img width="754" height="524" alt="twd8" src="https://github.com/user-attachments/assets/983b32d8-1c72-4b64-a978-fcb87e1f4848" />
