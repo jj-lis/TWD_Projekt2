@@ -35,12 +35,12 @@ df_debiuty <- df_debiuty %>% left_join(df_dane_partii %>% select(game_id, gracz,
 
 
 ui <- dashboardPage(
-  dashboardHeader(title = "Basic dashboard"),
+  dashboardHeader(title = "Szachy"),
   dashboardSidebar(
     sidebarMenu(
-      menuItem("Dashboard", tabName = "first", icon = icon("dashboard")),
-      menuItem("Widgets", tabName = "widgets", icon = icon("th")),
-      menuItem("Third", tabName = "third"),
+      menuItem("Ogólne statystyki", tabName = "first", icon = icon("dashboard")),
+      menuItem("Typ gry", tabName = "widgets", icon = icon("cog")),
+      menuItem("Ulubione debiuty", tabName = "third", icon = icon("thumbs-up")),
       selectInput("player",
                   "Wybierz użytkownika: ",
                   choices = c("Wszyscy" = "all",
@@ -63,15 +63,18 @@ ui <- dashboardPage(
                                     )
                        ),
                 column(6,
-                       box(height="240px", width=12, tableOutput("podsumowanie")),
-                       box(height="240px", width=12, plotOutput("kolowy"))
+                       box(height="240px", width=12, div(
+                         style = "display: flex; justify-content: center; align-items: center; height: 100%;",
+                         tableOutput("podsumowanie")
+                       )),
+                       box(height="400px", width=12, plotOutput("kolowy"))
                        )
                 )
       ),
       
       
       tabItem(tabName = "widgets",
-              h2("Widgets tab content"),
+              h2("Analiza stylu gry"),
               fluidRow(
                     box(
                 plotOutput("rozklad_partii")),
@@ -79,6 +82,7 @@ ui <- dashboardPage(
                 box(plotOutput("heatmap_ruchy"))
               )),
       tabItem(tabName = "third",
+              h2("Ulubione debiuty"),
               fluidRow(
               box(width=12, plotOutput("debiuty_liczba"))
               ),
@@ -101,7 +105,7 @@ server <- function(input, output) {
   output$weekday_wins <- renderPlot({
     
     rok <- input$lata
-    gracze <- input$gracz
+    gracze <- input$player
     
     if (gracze=="all")
       gracze = nick
@@ -133,7 +137,7 @@ server <- function(input, output) {
         legend.title = element_text(color="black",size=14),
         title = element_text(size=16),
         panel.grid.major.x = element_blank()
-      ) + scale_fill_discrete(palette = c("green","red"), limits=c("wygrana","przegrana"))
+      ) + scale_fill_discrete(palette = c("#00b300","#c0000d"), limits=c("wygrana","przegrana"))
     wykres
     
   })
@@ -307,19 +311,29 @@ server <- function(input, output) {
     if (gracze=="all")
       gracze = nick
     
-    wykres<-df_dane_partii %>%  filter(year<=rok[2] & year>=rok[1]) %>% filter(gracz %in% c(gracze)) %>% 
-      select(winner,gracz) %>% mutate(wygrana=case_when(
+    df_plot <- df_dane_partii %>% filter(year <= rok[2] & year >= rok[1]) %>%
+      filter(gracz %in% gracze) %>% select(winner, gracz) %>% mutate(wygrana = case_when(
         winner %in% nick ~ "wygrana",
         winner == "draw" ~ "remis",
-        .default = "przegrana")) %>% group_by(wygrana) %>% summarise(ile = n()) %>% 
-      ggplot(aes(x = "", y = ile, fill = wygrana)) +
-      geom_bar(stat="identity", width = 1, color = "white") +
+        TRUE ~ "przegrana"
+      )) %>% group_by(wygrana) %>% summarise(ile = n(), .groups = "drop") %>%
+      mutate( wygrana = factor(wygrana, levels = c("wygrana", "remis", "przegrana")),
+              proc = ile / sum(ile) * 100,
+              label = paste0(wygrana, " (", round(proc, 1), "%)"),
+              ypos = cumsum(ile) - 0.5*ile
+      )
+    
+    ggplot(df_plot, aes(x = 1, y = ile, fill = wygrana)) +
+      geom_bar(stat = "identity", width = 1, color = "white") +
       coord_polar("y", start = 0) +
       theme_void() +
-      geom_text(aes(label = wygrana),size=6,position = position_stack(vjust = 0.5)) +
-      scale_fill_brewer(palette="Set1") + guides(fill = "none")
-    
-    wykres
+      theme(plot.margin = unit(c(1,1,1,1), "pt")) +
+      geom_text(aes(y = ypos, label = label),
+                size = 5,
+                position = position_nudge(x = 0.6)) +
+      scale_fill_manual(values = c( "wygrana" = "#00b300",
+                                    "remis" = "#0000b3","przegrana" = "#cc0000"),name = "Wynik") +
+      guides(fill = "none") + xlim(0.5, 2) 
   })
   
   output$podsumowanie <- renderTable({
