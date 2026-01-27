@@ -48,7 +48,7 @@ ui <- dashboardPage(skin="green",
                               "Bartek" = "bArmAnEk",
                               "Wojtek" = "GDgamers")
                   ),
-      sliderInput("lata", "Lata",min=2017,max=2025,step=1,
+      sliderInput("lata", "Lata",min=2017,max=2025,step=1,sep="",
                   value = c(2017,2025)
     )
   )
@@ -58,12 +58,12 @@ ui <- dashboardPage(skin="green",
       
       tabItem(tabName = "first",
               fluidRow(
-                column(6, box(title= "Wyniki w zależności od dnia tygodnia",color="olive", solidHeader = TRUE, width=12,
+                column(6, box(title= "Wyniki w zależności od dnia tygodnia", color="green", solidHeader = TRUE, width=12,
                               height = "700px", plotOutput("weekday_wins")
                                     )
                        ),
                 column(6,
-                       box(title="Procent zwycięstw",height="500px", width=12,color="olive",
+                       box(title="Procent zwycięstw",height="700px", width=12,color="olive",
                            plotOutput("kolowy"),
                            tableOutput("podsumowanie")
                            )
