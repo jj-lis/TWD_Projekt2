@@ -49,7 +49,7 @@ ui <- dashboardPage(skin="green",
                               "Wojtek" = "GDgamers")
                   ),
       sliderInput("lata", "Lata",min=2017,max=2025,step=1,
-                  value = c(2017,2025), sep = ""
+                  value = c(2017,2025)
     )
   )
   ),
@@ -101,7 +101,7 @@ server <- function(input, output) {
   output$weekday_wins <- renderPlot({
     
     rok <- input$lata
-    gracze <- input$player
+    gracze <- input$gracz
     
     if (gracze=="all")
       gracze = nick

@@ -3,6 +3,8 @@ library(ggplot2)
 library(tidyr)
 library(lubridate)
 library(tibble)
+library(ggrepel)
+library(extrafont)
 
 df_ruchy <- read.csv("TWD_Projekt2\\full_moves.csv")
 df_dane_partii <- read.csv("TWD_Projekt2\\full_game_info.csv")
@@ -75,7 +77,34 @@ df_dane_partii %>%  filter(year<=rok[2] & year>=rok[1]) %>% filter(gracz %in% c(
   coord_polar("y", start = 0) +
   theme_void() +
   geom_text(aes(label = wygrana),size=6,position = position_stack(vjust = 0.5)) +
-  scale_fill_brewer(palette="Set1") + guides(fill = "none")
+  scale_fill_brewer(palette = "Set1") + guides(fill = "none")
+
+###### Kołowy 2
+
+
+df_plot <- df_dane_partii %>% filter(year <= rok[2] & year >= rok[1]) %>%
+  filter(gracz %in% gracze) %>% select(winner, gracz) %>% mutate(wygrana = case_when(
+    winner %in% nick ~ "wygrana",
+    winner == "draw" ~ "remis",
+    TRUE ~ "przegrana"
+  )) %>% group_by(wygrana) %>% summarise(ile = n(), .groups = "drop") %>%
+  mutate( wygrana = factor(wygrana, levels = c("wygrana", "remis", "przegrana")),
+    proc = ile / sum(ile) * 100,
+    label = paste0(wygrana, " (", round(proc, 1), "%)"),
+    ypos = cumsum(ile) - 0.5*ile
+  )
+
+ggplot(df_plot, aes(x = 1, y = ile, fill = wygrana)) +
+  geom_bar(stat = "identity", width = 1, color = "white") +
+  coord_polar("y", start = 0) +
+  theme_void() +
+  geom_text(aes(y = ypos, label = label),
+            size = 5,
+            position = position_nudge(x = 0.6)) +
+  scale_fill_manual(values = c( "wygrana" = "#00b300",
+      "remis" = "#0000b3","przegrana" = "#cc0000"),name = "Wynik") +
+  guides(fill = "none") + xlim(0.5, 2) 
+
 
   
 help()
@@ -224,5 +253,23 @@ colnames(wynik) <- (unlist(wynik[1,]))
 wynik<-wynik[-1,,drop=FALSE]
 
 wynik <- cbind(kategoria =c("najdłuższa gra", "najkrótsza gra", "najwięcej gier jednego dnia"), wynik )
+
+
+
+font_import()      # pierwszy raz importuje czcionki systemowe
+loadfonts(device = "win")  # dla Windows
+
+
+
+
+p <- ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point() +
+  labs(title = "Przykładowy wykres") +
+  theme(
+    text = element_text(family = "Calibri"),     
+    plot.title = element_text(size = 16)
+  )
+
+p
 
 

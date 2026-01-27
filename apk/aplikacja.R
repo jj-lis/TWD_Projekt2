@@ -55,10 +55,10 @@ ui <- navbarPage(
     fluidRow(
       column(6,  
              plotOutput("weekday_wins")),
-      column(6,  plotOutput("kolowy"))),
+      column(6,  plotOutput("kolowy",width="400px",height="400px"))),
     
     fluidRow(
-      column(6,),
+      column(6,img(src="pawn.jpg",height="100px",width="100px")),
       column(6,))
     
     )
@@ -159,7 +159,7 @@ server <- function(input, output) {
         legend.title = element_text(color="black",size=14),
         title = element_text(size=16),
         panel.grid.major.x = element_blank()
-      ) + scale_fill_discrete(palette = c("green","red"), limits=c("wygrana","przegrana"))
+      ) + scale_fill_discrete(palette = c("#00b300","#cc0000"), limits=c("wygrana","przegrana"))
     wykres
     
   })
@@ -333,19 +333,30 @@ server <- function(input, output) {
     if (gracze=="all")
       gracze = nick
     
-    wykres<-df_dane_partii %>%  filter(year<=rok[2] & year>=rok[1]) %>% filter(gracz %in% c(gracze)) %>% 
-      select(winner,gracz) %>% mutate(wygrana=case_when(
+    df_plot <- df_dane_partii %>% filter(year <= rok[2] & year >= rok[1]) %>%
+      filter(gracz %in% gracze) %>% select(winner, gracz) %>% mutate(wygrana = case_when(
         winner %in% nick ~ "wygrana",
         winner == "draw" ~ "remis",
-        .default = "przegrana")) %>% group_by(wygrana) %>% summarise(ile = n()) %>% 
-      ggplot(aes(x = "", y = ile, fill = wygrana)) +
-      geom_bar(stat="identity", width = 1, color = "white") +
+        TRUE ~ "przegrana"
+      )) %>% group_by(wygrana) %>% summarise(ile = n(), .groups = "drop") %>%
+      mutate( wygrana = factor(wygrana, levels = c("wygrana", "remis", "przegrana")),
+              proc = ile / sum(ile) * 100,
+              label = paste0(wygrana, " (", round(proc, 1), "%)"),
+              ypos = cumsum(ile) - 0.5*ile
+      )
+    
+    ggplot(df_plot, aes(x = 1, y = ile, fill = wygrana)) +
+      geom_bar(stat = "identity", width = 1, color = "white") +
       coord_polar("y", start = 0) +
       theme_void() +
-      geom_text(aes(label = wygrana),size=6,position = position_stack(vjust = 0.5)) +
-      scale_fill_brewer(palette="Set1") + guides(fill = "none")
+      theme(plot.margin = unit(c(1,1,1,1), "pt")) +
+      geom_text(aes(y = ypos, label = label),
+                size = 5,
+                position = position_nudge(x = 0.6)) +
+      scale_fill_manual(values = c( "wygrana" = "#00b300",
+                                    "remis" = "#0000b3","przegrana" = "#cc0000"),name = "Wynik") +
+      guides(fill = "none") + xlim(0.5, 2) 
     
-    wykres
   })
   
   output$podsumowanie <- renderTable({
