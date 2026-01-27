@@ -4,6 +4,8 @@ library(dplyr)
 library(tidyr)
 library(lubridate)
 library(ggplot2)
+library(plotly)
+library(tibble)
 
 ### Wczytanie danych i obróbka
 
@@ -73,14 +75,19 @@ ui <- dashboardPage(
               fluidRow(
                     box(
                 plotOutput("rozklad_partii")),
-                box(plotOutput("rozklad_material"))
+                box(plotOutput("rozklad_material")),
+                box(plotOutput("heatmap_ruchy"))
               )),
       tabItem(tabName = "third",
               fluidRow(
-              box(sliderInput("debiut_dlg", "Dlugość debiutu", min = 1, max=10, step=1,
-                          value=c(1,5))),
-              box(plotOutput("heatmap_ruchy")),
-              box(plotOutput("debiuty_liczba"))
+              box(width=12, plotOutput("debiuty_liczba"))
+              ),
+              fluidRow(
+                box(width=12, uiOutput("select_debiut"),
+                plotlyOutput("animacja",height = "500px"),
+                sliderInput("debiut_dlg", "Dlugość debiutu", min = 1, max=10, step=1,
+                                value=c(1,5))
+                    ),
               )
               )
       )
@@ -315,10 +322,200 @@ server <- function(input, output) {
     wykres
   })
   
-  output$podsumowanie <- renderTable({df_temp
+  output$podsumowanie <- renderTable({
     
+    rok <- input$lata
+    
+    max_min_partia <- df_ruchy %>% filter(year<=rok[2] & year>=rok[1])%>% 
+      select(gracz, move_no) %>% group_by(gracz) %>% 
+      summarise(max_dlg = max(move_no), min_dlg = min(move_no)) %>% 
+      mutate(gracz = case_when(gracz=="FirejFox"~"Janek",gracz=="GDgamers" ~ "Wojtek", .default = "Bartek"))
+    
+    
+    max_dzien <- df_dane_partii %>% filter(year<=rok[2] & year>=rok[1]) %>% 
+      select(gracz, date_played) %>% group_by(gracz, date_played) %>% summarise(ile = n()) %>% 
+      group_by(gracz) %>% summarise(liczba_partii = max(ile))
+    wynik <- cbind(max_min_partia, max_dzien)[c(1,2,3,5)]
+    
+    
+    wynik <- t(wynik)
+    colnames(wynik) <- (unlist(wynik[1,]))
+    wynik<-wynik[-1,,drop=FALSE]
+    wynik <- cbind(kategoria =c("najdłuższa gra", "najkrótsza gra", "najwięcej gier jednego dnia"), wynik )
+    wynik
     
   })
+  
+  output$select_debiut <- renderUI({
+    
+    rok <- input$lata
+    gracze <- input$player
+    dlg <- input$debiut_dlg
+    
+    if (gracze=="all")
+      gracze = nick
+    
+    
+    lista<- df_debiuty %>% filter(year<=rok[2] & year>=rok[1]) %>% filter(gracz %in% c(gracze)) %>%
+      group_by(game_id) %>% 
+      filter(move_no<=dlg[2] & move_no >= dlg[1]) %>% summarise(debiut = last(name), .groups = "drop") %>% 
+      group_by(debiut) %>% summarise(ile = n()) %>% top_n(5) %>% arrange() %>% select(debiut)
+    
+    
+    selectInput("debiut_wybrany","Debiuty: ", choices = lista)
+  })
+  
+  output$animacja <- renderPlotly({
+    #Czcionka do figur
+    piece_map <- c(
+      R = "♖", N = "♘", B= "♗", Q= "♕", K = "♔", P = "♙",  
+      r = "♜", n= "♞", b= "♝", q= "♛", k = "♚", p= "♟"   
+    )
+    
+    #Pomocnicza funkcja
+    fen_to_df <- function(fen, klatka) {
+      
+      #Dzielimy na wiersze szachownicy
+      rows <- strsplit(fen, "/")[[1]]
+      #Przygotowanie wyniku
+      result <- list()
+      
+      #Po wierszach szachwonicy
+      for (i in seq_along(rows)) {
+        
+        row <- rows[i]
+        #Znam kolejność, wczytywania (wiersz od y się zmianiają powoli)
+        y <- 9 - i        
+        x <- 1
+        
+        chars <- strsplit(row, "")[[1]]
+        
+        for (ch in chars) {
+          
+          if (grepl("[0-9]", ch)) {
+            x <- x + as.numeric(ch)
+          } else {
+            result[[length(result) + 1]] <- data.frame( frame=klatka,
+                                                        piece = piece_map[ch], x = x, y = y-0.1
+            )
+            x <- x + 1
+          }
+        }
+      }
+      
+      #Łączenie wyników
+      bind_rows(result)
+    }
+    
+    
+    one_game_leading_to_debut <- function(data, debut_name) {
+      #Uwzględniam początkową pozycję do animacji
+      fen0 <- "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR"
+      # Znajdź pierwsze id, w którym występuje debiut
+      first_id <- data %>% filter(name == debut_name) %>%
+        arrange(game_id) %>% slice(1) %>% pull(game_id)
+      
+      #W razie czego, zwracam pozycję 0
+      if (length(first_id) == 0 || is.na(first_id)) {
+        return (data.frame(fen=fen0))
+      }
+      
+      #Zwracam feny do momentu debiutu włącznie
+      fens<-data %>% filter(game_id == first_id) %>% mutate(step = row_number()) %>% 
+        filter(step <= min(step[name == debut_name])) %>% select(fen)
+      
+      #Połączenie
+      fens<-rbind(fen0,fens)
+    }
+    
+    fen_rows_to_df <- function(fens_df) {
+      
+      out <- list()
+      idx <- 1
+      
+      for (i in seq_len(nrow(fens_df))) {
+        #Ramka z klatek na fen
+        tmp <- fen_to_df(fens_df$fen[i],i)
+        #Lista ramek danych, idx - indeks na który zapisujemy ramkę danych
+        out[[idx]] <- tmp
+        idx <- idx + 1
+      }
+      #Wywołąnie rbind, na out (pola listy out to ramki danych)
+      do.call(rbind, out)
+    }
+    
+    #Tworzenie szachownicy, pętla w pętli, funkcja definiowana w miejscu,
+    # W środku jest informacja co robię dla każdej pary (x,y) (64 pola) o środku w punkcie (x,y)
+    # na koniec spłaszczenie
+    board_shapes <- lapply(1:8, function(x) {
+      lapply(1:8, function(y) {
+        list(
+          type = "rect",
+          x0 = x - 0.5,
+          x1 = x + 0.5,
+          y0 = y - 0.5,
+          y1 = y + 0.5,
+          fillcolor = ifelse((x + y) %% 2 == 0, "#769656", "#EEEED2"),
+          line = list(width = 1),
+          layer="below"
+        )
+      })
+    }) |> unlist(recursive = FALSE)
+    
+    
+    
+    
+    
+    debiut<- input$debiut_wybrany;
+    
+    wynik<- fen_rows_to_df(one_game_leading_to_debut(df_debiuty,debiut))
+    
+    fig <- plot_ly() %>%
+      
+      add_text(
+        data = wynik,
+        x = ~x,
+        y = ~y,
+        text = ~piece,
+        frame = ~frame,
+        textfont = list(size = 30),
+        hoverinfo="skip"
+      ) %>%
+      
+      layout(
+        shapes = board_shapes,
+        xaxis = list(
+          range = c(0.5, 8.5),
+          tickvals = 1:8,
+          ticktext = letters[1:8],
+          tickfont = list(size=14),
+          fixedrange = TRUE,
+          showgrid=FALSE,
+          title="",
+          constrain="domain"
+          
+        ),
+        yaxis = list(
+          range = c(0.5, 8.5),
+          tickvals=1:8,
+          ticktext = 1:8,
+          tickfont = list(size=14),
+          scaleanchor = "x",
+          fixedrange = TRUE,
+          showgrid=FALSE,
+          title="",
+          automargin=FALSE
+          
+        ),
+        showlegend=FALSE,
+        title=list(text=paste(debiut),font=t)
+        
+      ) %>% animation_opts(transition = 0)
+    
+    fig
+    
+  })
+  
 }
 
 shinyApp(ui, server)
