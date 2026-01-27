@@ -34,7 +34,7 @@ df_debiuty <- df_debiuty %>% left_join(df_dane_partii %>% select(game_id, gracz,
                                        by = "game_id")
 
 
-<<<<<<< HEAD
+
 ui <- dashboardPage(
   dashboardHeader(title = "Chess Dashboard"),
   dashboardSidebar(
@@ -42,7 +42,7 @@ ui <- dashboardPage(
       menuItem("Analiza wyników", tabName = "first", icon = icon("dashboard")),
       menuItem("Średni przebieg partii", tabName = "widgets", icon = icon("th")),
       menuItem("Debiuty", tabName = "third"),
-=======
+
 ui <- dashboardPage(skin="green",
   dashboardHeader(title = "Basic dashboard"),
   dashboardSidebar(
@@ -50,7 +50,7 @@ ui <- dashboardPage(skin="green",
       menuItem("Analiza wyników", tabName = "first", icon = icon("king", lib = "glyphicon")),
       menuItem("Analiza przebiegu partii", tabName = "widgets", icon = icon("bishop", lib = "glyphicon")),
       menuItem("Debiuty", tabName = "third", icon = icon("knight", lib = "glyphicon")),
->>>>>>> 503ad397c47046079bec25014642ffdfc819eb80
+
       selectInput("player",
                   "Wybierz użytkownika: ",
                   choices = c("Wszyscy" = "all",
