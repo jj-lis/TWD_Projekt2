@@ -34,13 +34,13 @@ df_debiuty <- df_debiuty %>% left_join(df_dane_partii %>% select(game_id, gracz,
                                        by = "game_id")
 
 
-ui <- dashboardPage(skin=green,
+ui <- dashboardPage(skin="green",
   dashboardHeader(title = "Basic dashboard"),
   dashboardSidebar(
     sidebarMenu(
-      menuItem("Dashboard", tabName = "first", icon = icon("dashboard")),
-      menuItem("Widgets", tabName = "widgets", icon = icon("th")),
-      menuItem("Third", tabName = "third"),
+      menuItem("Analiza wyników", tabName = "first", icon = icon("king", lib = "glyphicon")),
+      menuItem("Analiza przebiegu partii", tabName = "widgets", icon = icon("bishop", lib = "glyphicon")),
+      menuItem("Debiuty", tabName = "third", icon = icon("knight", lib = "glyphicon")),
       selectInput("player",
                   "Wybierz użytkownika: ",
                   choices = c("Wszyscy" = "all",
