@@ -62,13 +62,12 @@ ui <- dashboardPage(skin="green",
       tabItem(tabName = "first",
               fluidRow(valueBoxOutput("full_win"),valueBoxOutput("full_draw"),valueBoxOutput("full_loss")),
               fluidRow(
-                column(6, box(title= div(
-                  style="display:flex; justify-content:center; align-items:center; height:100%;",h4("Wyniki w zależności od dnia tygodnia")), status="success", solidHeader = TRUE, width=12,
-                              height = "700px", plotOutput("weekday_wins")
+                column(6, box(title= h3("Wyniki w zależności od dnia tygodnia", style="text-align: center;font-family: 'Poppins', sans-serif;"), status="success", solidHeader = TRUE, width=12,
+                              height = "500px", plotOutput("weekday_wins")
                                     )
                        ),
                 column(6,
-                       box(title="Procent zwycięstw",height="700px", width=12,status="success", solidHeader = TRUE,
+                       box(title=h3("Procent zwycięstw", style="text-align: center;font-family: 'Robota', sans-serif;"),height="700px", width=12,status="success", solidHeader = TRUE,
                            div(
                              style="display:flex; justify-content:center; align-items:center; height:100%;",tableOutput("podsumowanie")),
                            plotOutput("kolowy")
@@ -80,12 +79,11 @@ ui <- dashboardPage(skin="green",
       
       
       tabItem(tabName = "widgets",
-              h2("Widgets tab content"),
+              h2("Szczegóły partii", style="text-align: center;font-family: 'Robota', sans-serif"),
               fluidRow(
-                    box(
-                plotOutput("rozklad_partii")),
-                box(plotOutput("rozklad_material")),
-                box(plotOutput("heatmap_ruchy"))
+                    box(title=h3("Rozkład partii względem liczby ruchów", style="text-align: center;font-family: 'Robota', sans-serif"),status="success", solidHeader = TRUE, plotOutput("rozklad_partii")),
+                box(title=h3("Średni materiał na planszy podczas partii", style="text-align: center;font-family: 'Robota', sans-serif"),status="success", solidHeader = TRUE, plotOutput("rozklad_material")),
+                box(title=h3("Średnie odwiedzanie pól podczas partii", style="text-align: center;font-family: 'Robota', sans-serif"),status="success", solidHeader = TRUE, plotOutput("heatmap_ruchy"))
               )),
       tabItem(tabName = "third",
               h2("Ulubione debiuty"),
@@ -127,7 +125,7 @@ server <- function(input, output) {
       mutate(weekday = factor(weekday, levels=poziomy))%>% 
       ggplot(aes(y=weekday,x=ile,fill=wygrana)) + geom_col(position = "dodge") +
       labs(#title = "Wygrane i przegrane w zależności od dnia tygodnia", 
-        x = "liczba wygranych",
+        x = "liczba partii",
            y = "dzień tygodnia", fill="") +
       theme(
         panel.background = element_blank(),
@@ -160,12 +158,13 @@ server <- function(input, output) {
     wykres <- df_ruchy %>% filter(year<=rok[2] & year>=rok[1]) %>% filter(gracz %in% c(gracze)) %>% 
       select(game_id,move_no) %>% group_by(game_id) %>% summarise(ruchy = max(move_no)) %>% 
       ggplot(aes(x=ruchy)) + geom_histogram(fill="black",colour="lightgray",bins = 30) + 
-      labs(title= "Rozkład partii względem ilości ruchów", x = "Liczba ruchów",y = "liczba partii") +
+      labs(#title= "Rozkład partii względem ilości ruchów", 
+        x = "Liczba ruchów",y = "liczba partii") +
       theme(
         panel.background = element_blank(),
-        plot.background = element_rect(colour = "white"),
-        plot.title.position = "plot",
-        plot.title = element_text(hjust=0.5),
+        # plot.background = element_rect(colour = "white"),
+        # plot.title.position = "plot",
+        # plot.title = element_text(hjust=0.5),
         axis.text.x= element_text(color = "black",vjust=1,size=10),
         axis.text.y = element_text(color="black",size=10),
         axis.ticks.y = element_line(color="black"),
@@ -199,13 +198,13 @@ server <- function(input, output) {
         .default = "Bartek"
       )) %>% 
       ggplot(aes(x=move_no, y = avg, color=gracz)) + geom_line(size=1) +
-      labs(title = "Średni materiał na planszy ze względu na długość partii",
+      labs(#title = "Średni materiał na planszy ze względu na długość partii",
            x = "Liczba ruchów", y = "Średni materiał", color = "Gracz") +
       theme(
         panel.background = element_blank(),
-        plot.background = element_rect(colour = "white"),
-        plot.title.position = "plot",
-        plot.title = element_text(hjust=0.5),
+        # plot.background = element_rect(colour = "white"),
+        # plot.title.position = "plot",
+        # plot.title = element_text(hjust=0.5),
         axis.text.x= element_text(color = "black",vjust=1,size=10),
         axis.text.y = element_text(color="black",size=10),
         axis.ticks.y = element_line(color="black"),
@@ -263,12 +262,13 @@ server <- function(input, output) {
         legend.text = element_text(color="black",size=14),
         legend.title = element_text(color="black",size=14),
         legend.ticks = element_line(colour = "black"),
-        title = element_text(size=16),
-        plot.title.position = "plot",
-        plot.title = element_text(hjust=0)
+        # title = element_text(size=16),
+        # plot.title.position = "plot",
+        # plot.title = element_text(hjust=0)
       )+
       guides(fill = guide_colorbar(barwidth = 1.5, barheight = 15)) +
-      labs(title="Średnie odwiedzanie pól względem partii") +
+      labs(#title="Średnie odwiedzanie pól względem partii"
+        ) +
       coord_fixed()
     wykres
   })
