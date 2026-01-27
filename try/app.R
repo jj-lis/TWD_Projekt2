@@ -56,19 +56,7 @@ ui <- dashboardPage(
       # First tab content
       tabItem(tabName = "dashboard",
               fluidRow(
-                
                 box(
-                  selectInput("gracz",
-                              "Wybierz użytkownika: ",
-                              choices = c("Wszyscy" = "all",
-                                          "Janek" ="FirejFox",
-                                          "Bartek" = "bArmAnEk",
-                                          "Wojtek" = "GDgamers")),
-                  
-                  sliderInput("lata", "Lata",min=2017,max=2025,step=1,
-                              value = c(2017,2025)
-                )
-              ), box(
                 tableOutput("podsumowanie")
               ), box( plotOutput("weekday_wins")),
               box(plotOutput("kolowy"))
@@ -78,29 +66,12 @@ ui <- dashboardPage(
       tabItem(tabName = "widgets",
               h2("Widgets tab content"),
               fluidRow(
-                box(selectInput("player",
-                                "Wybierz użytkownika: ",
-                                choices = c("Wszyscy" = "all",
-                                            "Janek" ="FirejFox",
-                                            "Bartek" = "bArmAnEk",
-                                            "Wojtek" = "GDgamers"))
-                ),
-                box(sliderInput("lata", "Lata",min=2017,max=2025,step=1,
-                                value = c(2017,2025))),
                     box(
                 plotOutput("rozklad_partii")),
                 box(plotOutput("rozklad_material"))
               )),
       tabItem(tabName = "third",
               fluidRow(
-              box(selectInput("player",
-                          "Wybierz użytkownika: ",
-                          choices = c("Wszyscy" = "all",
-                                      "Janek" ="FirejFox",
-                                      "Bartek" = "bArmAnEk",
-                                      "Wojtek" = "GDgamers"))),
-              box(sliderInput("lata", "Lata",min=2017,max=2025,step=1,
-                              value = c(2017,2025))),
               box(sliderInput("debiut_dlg", "Dlugość debiutu", min = 1, max=10, step=1,
                           value=c(1,5))),
               box(plotOutput("heatmap_ruchy")),
