@@ -1,6 +1,20 @@
 # TWD_Projekt2
 Interaktywny dashboard stworzony aby przeanalizować trzech szachistów oraz ich partie rozegrane na stronie chess.com 
 
+# Ogólny widok
+## Pierwsza strona
+<img width="773" height="521" alt="twd3" src="https://github.com/user-attachments/assets/ae4bdf8f-4e9e-416e-9d7f-4bed0430029d" />
+
+## Druga strona
+<img width="1902" height="812" alt="twd13" src="https://github.com/user-attachments/assets/7bc1d093-40b2-40cd-af2c-5947c1f9fb38" />
+<img width="1627" height="686" alt="twd14" src="https://github.com/user-attachments/assets/c6ec0a85-bd08-412e-8511-da617fde0240" />
+
+## Trzecia strona
+
+<img width="1607" height="907" alt="twd16" src="https://github.com/user-attachments/assets/e123bcbb-b2e3-4c72-bee1-16f12ec6720a" />
+<img width="1592" height="886" alt="twd15" src="https://github.com/user-attachments/assets/9b888fd9-69b9-411d-a873-755378ac8fc6" />
+
+## Szczegóły
 <img width="171" height="98" alt="twd1" src="https://github.com/user-attachments/assets/2ee95c05-4182-437c-8ec8-256bb76387c2" />
 
 Do każdej z zakładek możemy wydzielić dany okres bądź zawodników
@@ -20,7 +34,9 @@ Kolejna część ukazuje dane związane z średnią ilością materiału (sumą 
 ## Debiuty 
 Ostatnia część posiada wykres top 5 ulubionych otwarć białymi i czarnymi
 
-<img width="755" height="319" alt="twd7" src="https://github.com/user-attachments/assets/4f29d02d-df35-415b-a083-4d031fea45d6" />
+
+<img width="1607" height="907" alt="twd16" src="https://github.com/user-attachments/assets/1e47a4de-d19b-4d84-8ac7-d171c86424a4" />
+
 
 A pod można spośród top 5 otwarć przejrzeć animację wybranego wariantu
 
