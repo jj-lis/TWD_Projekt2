@@ -35,13 +35,6 @@ df_debiuty <- df_debiuty %>% left_join(df_dane_partii %>% select(game_id, gracz,
 
 
 
-ui <- dashboardPage(
-  dashboardHeader(title = "Chess Dashboard"),
-  dashboardSidebar(
-    sidebarMenu(
-      menuItem("Analiza wyników", tabName = "first", icon = icon("dashboard")),
-      menuItem("Średni przebieg partii", tabName = "widgets", icon = icon("th")),
-      menuItem("Debiuty", tabName = "third"),
 
 ui <- dashboardPage(skin="green",
   dashboardHeader(title = "Basic dashboard"),
