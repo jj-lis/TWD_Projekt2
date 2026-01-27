@@ -63,7 +63,7 @@ ui <- dashboardPage(skin="green",
                                     )
                        ),
                 column(6,
-                       box(title="Procent zwycięstw",height="700px", width=12,status="success",
+                       box(title="Procent zwycięstw",height="700px", width=12,status="success", solidHeader = TRUE,
                            plotOutput("kolowy"),
                            tableOutput("podsumowanie")
                            )
@@ -118,13 +118,14 @@ server <- function(input, output) {
       group_by(weekday,wygrana) %>% summarise(ile = n()) %>% 
       mutate(weekday = factor(weekday, levels=poziomy))%>% 
       ggplot(aes(y=weekday,x=ile,fill=wygrana)) + geom_col(position = "dodge") +
-      labs(title = "Wygrane i przegrane w zależności od dnia tygodnia", x = "liczba wygranych",
+      labs(#title = "Wygrane i przegrane w zależności od dnia tygodnia", 
+        x = "liczba wygranych",
            y = "dzień tygodnia", fill="") +
       theme(
         panel.background = element_blank(),
         plot.background = element_rect(colour = "white"),
-        plot.title.position = "plot",
-        plot.title = element_text(hjust=0.5),
+        # plot.title.position = "plot",
+        # plot.title = element_text(hjust=0.5),
         axis.text.x= element_text(color = "black",vjust=1,size=10),
         axis.text.y = element_text(color="black",size=10),
         axis.ticks.y = element_line(color="black"),
