@@ -62,7 +62,8 @@ ui <- dashboardPage(skin="green",
       tabItem(tabName = "first",
               fluidRow(valueBoxOutput("full_win"),valueBoxOutput("full_draw"),valueBoxOutput("full_loss")),
               fluidRow(
-                column(6, box(title= h4("Wyniki w zależności od dnia tygodnia"), status="success", solidHeader = TRUE, width=12,
+                column(6, box(title= div(
+                  style="display:flex; justify-content:center; align-items:center; height:100%;",h4("Wyniki w zależności od dnia tygodnia")), status="success", solidHeader = TRUE, width=12,
                               height = "700px", plotOutput("weekday_wins")
                                     )
                        ),
@@ -102,6 +103,7 @@ ui <- dashboardPage(skin="green",
       )
       )
     )
+
 
   
 
