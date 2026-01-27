@@ -34,6 +34,7 @@ df_debiuty <- df_debiuty %>% left_join(df_dane_partii %>% select(game_id, gracz,
                                        by = "game_id")
 
 
+<<<<<<< HEAD
 ui <- dashboardPage(
   dashboardHeader(title = "Chess Dashboard"),
   dashboardSidebar(
@@ -41,6 +42,15 @@ ui <- dashboardPage(
       menuItem("Analiza wyników", tabName = "first", icon = icon("dashboard")),
       menuItem("Średni przebieg partii", tabName = "widgets", icon = icon("th")),
       menuItem("Debiuty", tabName = "third"),
+=======
+ui <- dashboardPage(skin="green",
+  dashboardHeader(title = "Basic dashboard"),
+  dashboardSidebar(
+    sidebarMenu(
+      menuItem("Analiza wyników", tabName = "first", icon = icon("king", lib = "glyphicon")),
+      menuItem("Analiza przebiegu partii", tabName = "widgets", icon = icon("bishop", lib = "glyphicon")),
+      menuItem("Debiuty", tabName = "third", icon = icon("knight", lib = "glyphicon")),
+>>>>>>> 503ad397c47046079bec25014642ffdfc819eb80
       selectInput("player",
                   "Wybierz użytkownika: ",
                   choices = c("Wszyscy" = "all",
@@ -48,7 +58,7 @@ ui <- dashboardPage(
                               "Bartek" = "bArmAnEk",
                               "Wojtek" = "GDgamers")
                   ),
-      sliderInput("lata", "Lata",min=2017,max=2025,step=1,
+      sliderInput("lata", "Lata",min=2017,max=2025,step=1,sep="",
                   value = c(2017,2025)
     )
   )
@@ -58,13 +68,15 @@ ui <- dashboardPage(
       
       tabItem(tabName = "first",
               fluidRow(
-                column(6, box(title= "Wyniki w zależności od dnia tygodnia",status = "primary", solidHeader = TRUE, width=12,
+                column(6, box(title= "Wyniki w zależności od dnia tygodnia", status="success", solidHeader = TRUE, width=12,
                               height = "700px", plotOutput("weekday_wins")
                                     )
                        ),
                 column(6,
-                       box(height="240px", width=12, tableOutput("podsumowanie")),
-                       box(height="240px", width=12, plotOutput("kolowy"))
+                       box(title="Procent zwycięstw",height="700px", width=12,status="success", solidHeader = TRUE,
+                           plotOutput("kolowy"),
+                           tableOutput("podsumowanie")
+                           )
                        )
                 )
       ),
@@ -116,13 +128,14 @@ server <- function(input, output) {
       group_by(weekday,wygrana) %>% summarise(ile = n()) %>% 
       mutate(weekday = factor(weekday, levels=poziomy))%>% 
       ggplot(aes(y=weekday,x=ile,fill=wygrana)) + geom_col(position = "dodge") +
-      labs(title = "Wygrane i przegrane w zależności od dnia tygodnia", x = "liczba wygranych",
+      labs(#title = "Wygrane i przegrane w zależności od dnia tygodnia", 
+        x = "liczba wygranych",
            y = "dzień tygodnia", fill="") +
       theme(
         panel.background = element_blank(),
         plot.background = element_rect(colour = "white"),
-        plot.title.position = "plot",
-        plot.title = element_text(hjust=0.5),
+        # plot.title.position = "plot",
+        # plot.title = element_text(hjust=0.5),
         axis.text.x= element_text(color = "black",vjust=1,size=10),
         axis.text.y = element_text(color="black",size=10),
         axis.ticks.y = element_line(color="black"),
