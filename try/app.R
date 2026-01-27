@@ -37,16 +37,25 @@ ui <- dashboardPage(
   dashboardSidebar(
     sidebarMenu(
       menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
-      menuItem("Widgets", tabName = "widgets", icon = icon("th"))
+      menuItem("Widgets", tabName = "widgets", icon = icon("th")),
+      menuItem("Third", tabName = "third"),
+      selectInput("player",
+                  "Wybierz użytkownika: ",
+                  choices = c("Wszyscy" = "all",
+                              "Janek" ="FirejFox",
+                              "Bartek" = "bArmAnEk",
+                              "Wojtek" = "GDgamers")
+                  ),
+      sliderInput("lata", "Lata",min=2017,max=2025,step=1,
+                  value = c(2017,2025)
     )
+  )
   ),
   dashboardBody(
     tabItems(
       # First tab content
       tabItem(tabName = "dashboard",
               fluidRow(
-                box(title= "Wygrane coś coś gdhfsghrsghdfghghdrhbfgbgnrnbdfhn",
-                    plotOutput("weekday_wins")),
                 
                 box(
                   selectInput("gracz",
@@ -63,29 +72,47 @@ ui <- dashboardPage(
                 tableOutput("podsumowanie")
               ), box( plotOutput("weekday_wins")),
               box(plotOutput("kolowy"))
-      ),
+      )),
       
       # Second tab content
       tabItem(tabName = "widgets",
               h2("Widgets tab content"),
               fluidRow(
-                box(title = "Weekday wins",
-                  plotOutput("weekday_wins")
-                ),
-                box(selectInput("gracz",
+                box(selectInput("player",
                                 "Wybierz użytkownika: ",
                                 choices = c("Wszyscy" = "all",
                                             "Janek" ="FirejFox",
                                             "Bartek" = "bArmAnEk",
-                                            "Wojtek" = "GDgamers")),
-                    
-                    sliderInput("lata", "Lata",min=2017,max=2025,step=1,
-                                value = c(2017,2025)))
+                                            "Wojtek" = "GDgamers"))
+                ),
+                box(sliderInput("lata", "Lata",min=2017,max=2025,step=1,
+                                value = c(2017,2025))),
+                    box(
+                plotOutput("rozklad_partii")),
+                box(plotOutput("rozklad_material"))
+              )),
+      tabItem(tabName = "third",
+              fluidRow(
+              box(selectInput("player",
+                          "Wybierz użytkownika: ",
+                          choices = c("Wszyscy" = "all",
+                                      "Janek" ="FirejFox",
+                                      "Bartek" = "bArmAnEk",
+                                      "Wojtek" = "GDgamers"))),
+              box(sliderInput("lata", "Lata",min=2017,max=2025,step=1,
+                              value = c(2017,2025))),
+              box(sliderInput("debiut_dlg", "Dlugość debiutu", min = 1, max=10, step=1,
+                          value=c(1,5))),
+              box(plotOutput("heatmap_ruchy")),
+              box(plotOutput("debiuty_liczba"))
+              )
               )
       )
+      )
     )
-  )
-)
+
+  
+
 
 server <- function(input, output) {
   output$weekday_wins <- renderPlot({
