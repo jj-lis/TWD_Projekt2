@@ -63,7 +63,13 @@ ui <- dashboardPage(skin="green",
               fluidRow(valueBoxOutput("full_win"),valueBoxOutput("full_draw"),valueBoxOutput("full_loss")),
               fluidRow(
                 column(6, box(title= h3("Wyniki w zależności od dnia tygodnia", style="text-align: center;font-family: 'Poppins', sans-serif;"), status="success", solidHeader = TRUE, width=12,
-                              height = "500px", plotOutput("weekday_wins")
+                              #height = "500px",
+                          
+                              plotOutput("weekday_wins"),
+                              HTML("
+             Całościowy stosunek zwycięstw i porażek zwykle utrzymuje się z trochę większą liczbą zwycięstw.
+             Co ciekwae gdy spojrzymy na poszczególnie dni tygodnia, może okazać się, że są dni w których powinniśmy
+             grać więcej (np. niedziela), natomiast wtorki nie dla każdego są szczęśliwe.")
                                     )
                        ),
                 column(6,
@@ -83,12 +89,49 @@ ui <- dashboardPage(skin="green",
               fluidRow(
                     box(title=h3("Rozkład partii względem liczby ruchów", style="text-align: center;font-family: 'Robota', sans-serif"),status="success", solidHeader = TRUE, plotOutput("rozklad_partii")),
                 box(title=h3("Średni materiał na planszy podczas partii", style="text-align: center;font-family: 'Robota', sans-serif"),status="success", solidHeader = TRUE, plotOutput("rozklad_material")),
-                box(title=h3("Średnie odwiedzanie pól podczas partii", style="text-align: center;font-family: 'Robota', sans-serif"),status="success", solidHeader = TRUE, plotOutput("heatmap_ruchy"))
-              )),
+                box(title=h3("Średnie odwiedzanie pól podczas partii", style="text-align: center;font-family: 'Robota', sans-serif"),status="success", solidHeader = TRUE, plotOutput("heatmap_ruchy")),
+                box(title=h3("Czym jest materiał i skąd wachania na końcu partii?", style="text-align: center;font-family: 'Robota', sans-serif"),
+                status="success", solidHeader = TRUE, HTML("Materiał liczymy mnożąc liczbę figur przez ich wartość. Każda figura na szachownicy ma swoją wartość:
+    <ul>
+      <li>Pionek - 1 punkt</li>
+      <li>Skoczek - 3 punkty</li>
+      <li>Goniec - 3 punkty</li>
+      <li> Wieża - 5 punktów </li>
+      <li> Hetman - 9 punktów </li>
+      <li> Król - bezcenny </li>
+    </ul>
+    Na ogół wraz z rozwojem partii spodzieamy się tendencji spadkowej materiału, jednak jeśli pionek trafi na
+    ostatni wiersz, to następuje <b> promocja </b>, co oznacza, że pionek może stać się dowolną figurą (najczęściej 
+    <b> hetmanem</b>).")
+              ))),
+      
+      
+      
       tabItem(tabName = "third",
-              h2("Ulubione debiuty"),
+              h2("Ulubione debiuty", style="text-align: center;font-family: 'Robota', sans-serif"),
               fluidRow(
-              box(width=12, plotOutput("debiuty_liczba"))
+                box(title = "Czym jest debiut?",
+                    width = 12,
+                    HTML('
+      <div style="
+        text-align: justify;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+      ">
+        <b>Debiutem</b>, inaczej otwarcie, początkowa faza partii szachów. Debiuty o nazwach są zwykle
+        dobrze zbadane i zapewniające obu stronom gry równe szanse na zwycięstwo. Często mówi się też o
+        liniach teorii szachowej i jak długo gracze trzymają się jej. Na poniższych wykresach można
+        zobaczyć kto, kiedy i jakie otwarcia grał oraz obejrzeć animację tych ruchów.
+      </div>
+    '))
+              ),
+              
+              
+              fluidRow(
+              
+              box(title=h3("Rozkład najpopularniejszych debiutów", style="text-align: center;font-family: 'Robota', sans-serif"),
+                  status="success", solidHeader = TRUE,width=12, plotOutput("debiuty_liczba"))
               ),
               fluidRow(
                 box(width=12, uiOutput("select_debiut"),
@@ -132,8 +175,8 @@ server <- function(input, output) {
         plot.background = element_rect(colour = "white"),
         # plot.title.position = "plot",
         # plot.title = element_text(hjust=0.5),
-        axis.text.x= element_text(color = "black",vjust=1,size=10),
-        axis.text.y = element_text(color="black",size=10),
+        axis.text.x= element_text(color = "black",vjust=1,size=14),
+        axis.text.y = element_text(color="black",size=14),
         axis.ticks.y = element_line(color="black"),
         panel.grid.major.y = element_line(color="black",linetype=1),
         panel.grid.minor.y = element_line(color="black"),
@@ -165,8 +208,8 @@ server <- function(input, output) {
         # plot.background = element_rect(colour = "white"),
         # plot.title.position = "plot",
         # plot.title = element_text(hjust=0.5),
-        axis.text.x= element_text(color = "black",vjust=1,size=10),
-        axis.text.y = element_text(color="black",size=10),
+        axis.text.x= element_text(color = "black",vjust=1,size=14),
+        axis.text.y = element_text(color="black",size=14),
         axis.ticks.y = element_line(color="black"),
         panel.grid.major.y = element_line(color="black",linetype=1),
         panel.grid.minor.y = element_line(color="black"),
@@ -205,8 +248,8 @@ server <- function(input, output) {
         # plot.background = element_rect(colour = "white"),
         # plot.title.position = "plot",
         # plot.title = element_text(hjust=0.5),
-        axis.text.x= element_text(color = "black",vjust=1,size=10),
-        axis.text.y = element_text(color="black",size=10),
+        axis.text.x= element_text(color = "black",vjust=1,size=14),
+        axis.text.y = element_text(color="black",size=14),
         axis.ticks.y = element_line(color="black"),
         panel.grid.major.y = element_line(color="black",linetype=1),
         panel.grid.minor.y = element_line(color="black"),
@@ -257,8 +300,8 @@ server <- function(input, output) {
       theme(
         axis.title.x = element_blank(),
         axis.title.y = element_blank(),
-        axis.text.x= element_text(color = "black",vjust=1,size=10),
-        axis.text.y = element_text(color="black",size=10),
+        axis.text.x= element_text(color = "black",vjust=1,size=14),
+        axis.text.y = element_text(color="black",size=14),
         legend.text = element_text(color="black",size=14),
         legend.title = element_text(color="black",size=14),
         legend.ticks = element_line(colour = "black"),
