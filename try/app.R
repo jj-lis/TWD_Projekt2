@@ -60,6 +60,7 @@ ui <- dashboardPage(skin="green",
     tabItems(
       
       tabItem(tabName = "first",
+              fluidRow(valueBoxOutput("full_win"),valueBoxOutput("full_draw"),valueBoxOutput("full_loss")),
               fluidRow(
                 column(6, box(title= "Wyniki w zależności od dnia tygodnia", status="success", solidHeader = TRUE, width=12,
                               height = "700px", plotOutput("weekday_wins")
@@ -532,6 +533,65 @@ server <- function(input, output) {
     fig
     
   })
+  
+  output$full_win <- renderValueBox({
+    
+    rok <- input$lata
+    gracze <- input$player
+    
+    if (gracze=="all")
+      gracze = nick
+    
+    dane<-df_dane_partii %>% filter(year<=rok[2] & year>=rok[1]) %>% filter(gracz %in% c(gracze)) %>% 
+      filter(winner==gracz)
+    wartosc<-dim(dane)[1]
+    
+    valueBox(
+      value = wartosc,
+      subtitle = "Wygrane",
+      color="green",
+      icon=icon("thumbs-up")
+    )
+  })
+  
+  output$full_loss <- renderValueBox({
+    rok <- input$lata
+    gracze <- input$player
+    
+    if (gracze=="all")
+      gracze = nick
+    
+    dane<-df_dane_partii %>% filter(year<=rok[2] & year>=rok[1]) %>% filter(gracz %in% c(gracze)) %>% 
+      filter(loser==gracz)
+    wartosc<-dim(dane)[1]
+    
+    valueBox(
+      value = wartosc,
+      subtitle = "Przegrane",
+      color="red",
+      icon=icon("thumbs-down")
+    )
+  })
+  
+  output$full_draw <- renderValueBox({
+    rok <- input$lata
+    gracze <- input$player
+    
+    if (gracze=="all")
+      gracze = nick
+    
+    dane<-df_dane_partii %>% filter(year<=rok[2] & year>=rok[1]) %>% filter(gracz %in% c(gracze)) %>% 
+      filter(loser=="draw")
+    wartosc<-dim(dane)[1]
+    
+    valueBox(
+      value = wartosc,
+      subtitle = "Remisy",
+      color="yellow",
+      icon=icon("equals")
+    )
+  }
+  )
   
 }
 

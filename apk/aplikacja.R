@@ -610,7 +610,7 @@ server <- function(input, output) {
       value = wartosc,
       subtitle = "Remisy",
       color="yellow",
-      icon=icon("th")
+      icon=icon("equals")
     )
     
   })
