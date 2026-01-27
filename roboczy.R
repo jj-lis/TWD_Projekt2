@@ -2,6 +2,7 @@ library(dplyr)
 library(ggplot2)
 library(tidyr)
 library(lubridate)
+library(tibble)
 
 df_ruchy <- read.csv("TWD_Projekt2\\full_moves.csv")
 df_dane_partii <- read.csv("TWD_Projekt2\\full_game_info.csv")
@@ -194,6 +195,34 @@ df_debiuty %>% filter(player %in% c("bArmAnEk")) %>% group_by(game_id) %>%
     panel.grid.major.x = element_blank()
   )
 
+######## Tabela z podsumowaniem
 
 
-help("geom_line")
+View(df_dane_partii)
+
+
+View(df_ruchy)
+
+rok <- c(2017,2020)
+
+max_min_partia <- df_ruchy %>% filter(year<=rok[2] & year>=rok[1])%>% 
+  select(gracz, move_no) %>% group_by(gracz) %>% 
+  summarise(max_dlg = max(move_no), min_dlg = min(move_no)) %>% 
+  mutate(gracz = case_when(gracz=="FirejFox"~"Janek",gracz=="GDgamers" ~ "Wojtek", .default = "Bartek"))
+
+
+max_dzien <- df_dane_partii %>% filter(year<=rok[2] & year>=rok[1]) %>% 
+  select(gracz, date_played) %>% group_by(gracz, date_played) %>% summarise(ile = n()) %>% 
+  group_by(gracz) %>% summarise(liczba_partii = max(ile))
+wynik <- cbind(max_min_partia, max_dzien)[c(1,2,3,5)]
+
+
+wynik <- t(wynik)
+
+colnames(wynik) <- (unlist(wynik[1,]))
+
+wynik<-wynik[-1,,drop=FALSE]
+
+wynik <- cbind(kategoria =c("najdłuższa gra", "najkrótsza gra", "najwięcej gier jednego dnia"), wynik )
+
+

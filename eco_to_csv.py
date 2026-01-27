@@ -26,7 +26,7 @@ df2.loc[:,"Ruchy_str"] = ruchy
 
 # %%
 games = pd.read_csv("full_moves.csv") 
-games_small = games.loc[:,["game_id","move_no","move_sequence"]]
+games_small = games.loc[:,["game_id","move_no","move_sequence","fen"]]
 # %%
 games_small.loc[:,"Ruchy_str"] = games_small.loc[:,"move_sequence"].str.replace("|","")
 # %%
@@ -35,4 +35,6 @@ wynik=pd.merge(games_small,df2,left_on="Ruchy_str",right_on="Ruchy_str",how="lef
 wynik.to_csv("debiuty.csv")
 
 
+# %%
+df2.to_csv("lista_debiut.csv")
 # %%
