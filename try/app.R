@@ -33,7 +33,7 @@ df_debiuty <- df_debiuty %>% left_join(df_dane_partii %>% select(game_id, gracz,
 
 
 ui <- dashboardPage(
-  dashboardHeader(title = "Basic dashboard"),
+  dashboardHeader(title = "Analiza "),
   dashboardSidebar(
     sidebarMenu(
       menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
@@ -47,7 +47,7 @@ ui <- dashboardPage(
                               "Wojtek" = "GDgamers")
                   ),
       sliderInput("lata", "Lata",min=2017,max=2025,step=1,
-                  value = c(2017,2025)
+                  value = c(2017,2025), sep = ""
     )
   )
   ),
@@ -118,7 +118,7 @@ server <- function(input, output) {
   output$weekday_wins <- renderPlot({
     
     rok <- input$lata
-    gracze <- input$gracz
+    gracze <- input$player
     
     if (gracze=="all")
       gracze = nick
