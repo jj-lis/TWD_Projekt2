@@ -270,6 +270,15 @@ p <- ggplot(mtcars, aes(x = wt, y = mpg)) +
     plot.title = element_text(size = 16)
   )
 
-p
 
+
+rok <- c(2017,2025)
+player <- nick
+
+if (player=="all")
+  player = nick
+
+dane<-df_dane_partii %>% filter(year<=rok[2] & year>=rok[1]) %>% filter(gracz %in% c(player)) %>% 
+  filter(winner==gracz)
+dim(dane)[1]
 
