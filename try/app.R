@@ -35,12 +35,12 @@ df_debiuty <- df_debiuty %>% left_join(df_dane_partii %>% select(game_id, gracz,
 
 
 ui <- dashboardPage(
-  dashboardHeader(title = "Szachy"),
+  dashboardHeader(title = "Basic dashboard"),
   dashboardSidebar(
     sidebarMenu(
-      menuItem("Ogólne statystyki", tabName = "first", icon = icon("dashboard")),
-      menuItem("Typ gry", tabName = "widgets", icon = icon("cog")),
-      menuItem("Ulubione debiuty", tabName = "third", icon = icon("thumbs-up")),
+      menuItem("Dashboard", tabName = "first", icon = icon("dashboard")),
+      menuItem("Widgets", tabName = "widgets", icon = icon("th")),
+      menuItem("Third", tabName = "third"),
       selectInput("player",
                   "Wybierz użytkownika: ",
                   choices = c("Wszyscy" = "all",
@@ -58,23 +58,20 @@ ui <- dashboardPage(
       
       tabItem(tabName = "first",
               fluidRow(
-                column(6, box(status = "primary", solidHeader = TRUE, width=12,
-                              height = "500px", plotOutput("weekday_wins")
+                column(6, box(title= "Wyniki w zależności od dnia tygodnia",status = "primary", solidHeader = TRUE, width=12,
+                              height = "700px", plotOutput("weekday_wins")
                                     )
                        ),
                 column(6,
-                       box(height="240px", width=12, div(
-                         style = "display: flex; justify-content: center; align-items: center; height: 100%;",
-                         tableOutput("podsumowanie")
-                       )),
-                       box(height="400px", width=12, plotOutput("kolowy"))
+                       box(height="240px", width=12, tableOutput("podsumowanie")),
+                       box(height="240px", width=12, plotOutput("kolowy"))
                        )
                 )
       ),
       
       
       tabItem(tabName = "widgets",
-              h2("Analiza stylu gry"),
+              h2("Widgets tab content"),
               fluidRow(
                     box(
                 plotOutput("rozklad_partii")),
