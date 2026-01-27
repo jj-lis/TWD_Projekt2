@@ -34,7 +34,7 @@ df_debiuty <- df_debiuty %>% left_join(df_dane_partii %>% select(game_id, gracz,
                                        by = "game_id")
 
 
-ui <- dashboardPage(
+ui <- dashboardPage(skin=green,
   dashboardHeader(title = "Basic dashboard"),
   dashboardSidebar(
     sidebarMenu(
