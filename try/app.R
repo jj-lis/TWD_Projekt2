@@ -58,13 +58,15 @@ ui <- dashboardPage(skin="green",
       
       tabItem(tabName = "first",
               fluidRow(
-                column(6, box(title= "Wyniki w zależności od dnia tygodnia",status = "primary", solidHeader = TRUE, width=12,
+                column(6, box(title= "Wyniki w zależności od dnia tygodnia",color="olive", solidHeader = TRUE, width=12,
                               height = "700px", plotOutput("weekday_wins")
                                     )
                        ),
                 column(6,
-                       box(height="240px", width=12, tableOutput("podsumowanie")),
-                       box(height="240px", width=12, plotOutput("kolowy"))
+                       box(title="Procent zwycięstw",height="500px", width=12,color="olive",
+                           plotOutput("kolowy"),
+                           tableOutput("podsumowanie")
+                           )
                        )
                 )
       ),
