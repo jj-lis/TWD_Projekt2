@@ -36,7 +36,7 @@ ui <- dashboardPage(
   dashboardHeader(title = "Analiza "),
   dashboardSidebar(
     sidebarMenu(
-      menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
+      menuItem("Dashboard", tabName = "first", icon = icon("dashboard")),
       menuItem("Widgets", tabName = "widgets", icon = icon("th")),
       menuItem("Third", tabName = "third"),
       selectInput("player",
@@ -53,16 +53,21 @@ ui <- dashboardPage(
   ),
   dashboardBody(
     tabItems(
-      # First tab content
-      tabItem(tabName = "dashboard",
-              fluidRow(
-                box(
-                tableOutput("podsumowanie")
-              ), box( plotOutput("weekday_wins")),
-              box(plotOutput("kolowy"))
-      )),
       
-      # Second tab content
+      tabItem(tabName = "first",
+              fluidRow(
+                column(6, box(status = "primary", solidHeader = TRUE, width=12,
+                              height = "500px", plotOutput("weekday_wins")
+                                    )
+                       ),
+                column(6,
+                       box(height="240px", width=12, tableOutput("podsumowanie")),
+                       box(height="240px", width=12, plotOutput("kolowy"))
+                       )
+                )
+      ),
+      
+      
       tabItem(tabName = "widgets",
               h2("Widgets tab content"),
               fluidRow(
@@ -290,7 +295,7 @@ server <- function(input, output) {
   output$kolowy <- renderPlot({
     
     rok <- input$lata
-    gracze <- input$gracz
+    gracze <- input$player
     
     if (gracze=="all")
       gracze = nick
