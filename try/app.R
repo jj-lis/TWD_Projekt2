@@ -34,13 +34,13 @@ df_debiuty <- df_debiuty %>% left_join(df_dane_partii %>% select(game_id, gracz,
                                        by = "game_id")
 
 
-ui <- dashboardPage(
-  dashboardHeader(title = "Analiza "),
+ui <- dashboardPage(skin="green",
+  dashboardHeader(title = "Chess Dashboard"),
   dashboardSidebar(
     sidebarMenu(
-      menuItem("Dashboard", tabName = "first", icon = icon("dashboard")),
-      menuItem("Widgets", tabName = "widgets", icon = icon("th")),
-      menuItem("Third", tabName = "third"),
+      menuItem("Analiza wyników", tabName = "first", icon = icon("king", lib = "glyphicon")),
+      menuItem("Średni przebieg partii", tabName = "second", icon = icon("bishop", lib = "glyphicon")),
+      menuItem("Debiuty", tabName = "third", icon = icon("knight", lib = "glyphicon")),
       selectInput("player",
                   "Wybierz użytkownika: ",
                   choices = c("Wszyscy" = "all",
@@ -58,19 +58,19 @@ ui <- dashboardPage(
       
       tabItem(tabName = "first",
               fluidRow(
-                column(6, box(status = "primary", solidHeader = TRUE, width=12,
-                              height = "500px", plotOutput("weekday_wins")
+                column(6, box(title= "Wyniki w zależności od dnia tygodnia",status = "primary", solidHeader = TRUE, width=12,
+                              height = "700px", plotOutput("weekday_wins")
                                     )
                        ),
                 column(6,
                        box(height="240px", width=12, tableOutput("podsumowanie")),
-                       box(height="240px", width=12, plotOutput("kolowy"))
+                       box(title="Rozkład wyników",height="240px", width=12, plotOutput("kolowy"))
                        )
                 )
       ),
       
       
-      tabItem(tabName = "widgets",
+      tabItem(tabName = "second",
               h2("Widgets tab content"),
               fluidRow(
                     box(
