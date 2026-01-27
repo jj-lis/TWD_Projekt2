@@ -37,7 +37,7 @@ df_debiuty <- df_debiuty %>% left_join(df_dane_partii %>% select(game_id, gracz,
 
 
 ui <- dashboardPage(skin="green",
-  dashboardHeader(title = "Basic dashboard"),
+  dashboardHeader(title = "Chess dashboard"),
   dashboardSidebar(
     sidebarMenu(
       menuItem("Analiza wyników", tabName = "first", icon = icon("king", lib = "glyphicon")),
@@ -62,14 +62,16 @@ ui <- dashboardPage(skin="green",
       tabItem(tabName = "first",
               fluidRow(valueBoxOutput("full_win"),valueBoxOutput("full_draw"),valueBoxOutput("full_loss")),
               fluidRow(
-                column(6, box(title= "Wyniki w zależności od dnia tygodnia", status="success", solidHeader = TRUE, width=12,
+                column(6, box(title= h4("Wyniki w zależności od dnia tygodnia"), status="success", solidHeader = TRUE, width=12,
                               height = "700px", plotOutput("weekday_wins")
                                     )
                        ),
                 column(6,
                        box(title="Procent zwycięstw",height="700px", width=12,status="success", solidHeader = TRUE,
-                           plotOutput("kolowy"),
-                           tableOutput("podsumowanie")
+                           div(
+                             style="display:flex; justify-content:center; align-items:center; height:100%;",tableOutput("podsumowanie")),
+                           plotOutput("kolowy")
+                           
                            )
                        )
                 )
