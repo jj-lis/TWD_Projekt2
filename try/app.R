@@ -45,7 +45,8 @@ ui <- dashboardPage(
       # First tab content
       tabItem(tabName = "dashboard",
               fluidRow(
-                box(plotOutput("plot1", height = 250)),
+                box(title= "Wygrane coś coś gdhfsghrsghdfghghdrhbfgbgnrnbdfhn",
+                      plotOutput("plot1", height = 250)),
                 
                 box(
                   title = "Controls",
